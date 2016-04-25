@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		AA641DE51CCE15B300304B86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DE41CCE15B300304B86 /* AppDelegate.swift */; };
-		AA641DE71CCE15B300304B86 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DE61CCE15B300304B86 /* FirstViewController.swift */; };
+		AA641DE71CCE15B300304B86 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DE61CCE15B300304B86 /* CardsViewController.swift */; };
 		AA641DE91CCE15B300304B86 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DE81CCE15B300304B86 /* SecondViewController.swift */; };
 		AA641DEC1CCE15B300304B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA641DEA1CCE15B300304B86 /* Main.storyboard */; };
 		AA641DEE1CCE15B300304B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA641DED1CCE15B300304B86 /* Assets.xcassets */; };
 		AA641DF11CCE15B300304B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA641DEF1CCE15B300304B86 /* LaunchScreen.storyboard */; };
+		AA641DFA1CCE5E1300304B86 /* CardsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DF91CCE5E1300304B86 /* CardsScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA641DE11CCE15B300304B86 /* Vitaly Ishkulov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vitaly Ishkulov.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA641DE41CCE15B300304B86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA641DE61CCE15B300304B86 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		AA641DE61CCE15B300304B86 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		AA641DE81CCE15B300304B86 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		AA641DEB1CCE15B300304B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA641DED1CCE15B300304B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA641DF01CCE15B300304B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA641DF21CCE15B300304B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA641DF91CCE5E1300304B86 /* CardsScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		AA641DE31CCE15B300304B86 /* Vitaly Ishkulov */ = {
 			isa = PBXGroup;
 			children = (
-				AA641DE41CCE15B300304B86 /* AppDelegate.swift */,
-				AA641DE61CCE15B300304B86 /* FirstViewController.swift */,
-				AA641DE81CCE15B300304B86 /* SecondViewController.swift */,
+				AA641DE61CCE15B300304B86 /* CardsViewController.swift */,
+				AA641DF91CCE5E1300304B86 /* CardsScrollView.swift */,
 				AA641DEA1CCE15B300304B86 /* Main.storyboard */,
 				AA641DED1CCE15B300304B86 /* Assets.xcassets */,
+				AA641DF81CCE5D0B00304B86 /* Supporting Files */,
+			);
+			path = "Vitaly Ishkulov";
+			sourceTree = "<group>";
+		};
+		AA641DF81CCE5D0B00304B86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA641DE81CCE15B300304B86 /* SecondViewController.swift */,
+				AA641DE41CCE15B300304B86 /* AppDelegate.swift */,
 				AA641DEF1CCE15B300304B86 /* LaunchScreen.storyboard */,
 				AA641DF21CCE15B300304B86 /* Info.plist */,
 			);
-			path = "Vitaly Ishkulov";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +152,8 @@
 			files = (
 				AA641DE91CCE15B300304B86 /* SecondViewController.swift in Sources */,
 				AA641DE51CCE15B300304B86 /* AppDelegate.swift in Sources */,
-				AA641DE71CCE15B300304B86 /* FirstViewController.swift in Sources */,
+				AA641DE71CCE15B300304B86 /* CardsViewController.swift in Sources */,
+				AA641DFA1CCE5E1300304B86 /* CardsScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Vitaly Ishkulov/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iva-soft.Vitaly-Ishkulov";
@@ -265,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Vitaly Ishkulov/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iva-soft.Vitaly-Ishkulov";
