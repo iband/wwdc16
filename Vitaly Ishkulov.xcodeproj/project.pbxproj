@@ -14,6 +14,7 @@
 		AA641DEE1CCE15B300304B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA641DED1CCE15B300304B86 /* Assets.xcassets */; };
 		AA641DF11CCE15B300304B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA641DEF1CCE15B300304B86 /* LaunchScreen.storyboard */; };
 		AA641DFA1CCE5E1300304B86 /* CardsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DF91CCE5E1300304B86 /* CardsScrollView.swift */; };
+		AA641DFC1CCE6C9D00304B86 /* BubbleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DFB1CCE6C9D00304B86 /* BubbleButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AA641DF01CCE15B300304B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA641DF21CCE15B300304B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA641DF91CCE5E1300304B86 /* CardsScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsScrollView.swift; sourceTree = "<group>"; };
+		AA641DFB1CCE6C9D00304B86 /* BubbleButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				AA641DE61CCE15B300304B86 /* CardsViewController.swift */,
 				AA641DF91CCE5E1300304B86 /* CardsScrollView.swift */,
+				AA641DFB1CCE6C9D00304B86 /* BubbleButtonView.swift */,
 				AA641DEA1CCE15B300304B86 /* Main.storyboard */,
 				AA641DED1CCE15B300304B86 /* Assets.xcassets */,
 				AA641DF81CCE5D0B00304B86 /* Supporting Files */,
@@ -153,6 +156,7 @@
 				AA641DE91CCE15B300304B86 /* SecondViewController.swift in Sources */,
 				AA641DE51CCE15B300304B86 /* AppDelegate.swift in Sources */,
 				AA641DE71CCE15B300304B86 /* CardsViewController.swift in Sources */,
+				AA641DFC1CCE6C9D00304B86 /* BubbleButtonView.swift in Sources */,
 				AA641DFA1CCE5E1300304B86 /* CardsScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
