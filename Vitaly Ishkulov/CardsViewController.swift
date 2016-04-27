@@ -8,20 +8,34 @@
 
 import UIKit
 
-class CardsViewController: UIViewController {
+protocol DetailsView {
+    func showDetailsView(sender: UIButton)
+}
+
+class CardsViewController: UIViewController, DetailsView {
 
     @IBOutlet weak var cardsScrollView: CardsScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        cardsScrollView.controller = self
         cardsScrollView.frame = self.view.frame
-        print(self.view.frame)
+        
+        self.navigationController!.view.backgroundColor = UIColor.whiteColor()
         
         cardsScrollView.contentOffset.x = cardsScrollView.contentSize.width / 2 - self.view.frame.size.width / 2
         cardsScrollView.contentOffset.y = cardsScrollView.contentSize.height / 2 - self.view.frame.size.height / 2
         
+        let dictionaryBrain = DictionaryBrain()
+        
+        cardsScrollView.totalWordsCount = dictionaryBrain.wordCount()
+        
         cardsScrollView.buttonsSetUp()
+    }
+    
+    func showDetailsView(sender: UIButton) {
+        self.performSegueWithIdentifier("showDetails", sender: sender)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -29,5 +43,7 @@ class CardsViewController: UIViewController {
         cardsScrollView.animateButtons()
     }
 
+    
+    
 }
 

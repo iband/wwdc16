@@ -9,7 +9,7 @@
 import UIKit
 
 class CardsScrollView: UIScrollView {
-    
+    var controller: DetailsView?
     private var buttons: [BubbleButtonView] = []
     private var animator: UIDynamicAnimator!
     private var circleCenters: [CGPoint] = []
@@ -19,7 +19,7 @@ class CardsScrollView: UIScrollView {
     
     private let defaultCircleColor = "#00BFFF"
     
-    private let totalWordsCount = 500 // TODO: should be obtained from the dictionary of words
+    var totalWordsCount: Int? // TODO: should be obtained from the dictionary of words
     
     private func setup() {
         self.contentSize = CGSize(width: 1000, height: 1200)
@@ -34,9 +34,9 @@ class CardsScrollView: UIScrollView {
         
         for center in circleCenters {
             
-            buttonId = globalButtonId % (totalWordsCount - 1) + 1 // show different words on refresh
+            buttonId = globalButtonId % (totalWordsCount! - 1) + 1 // show different words on refresh
             
-            /* TODO: data from the disctionary
+            /* TODO: data from the dictionary
              let element = self.dataManager.jsonData["\(buttonId)"] as! NSDictionary
              let title = element["title"] as! String
              */
@@ -50,7 +50,7 @@ class CardsScrollView: UIScrollView {
         }
         for button in buttons {
             button.alpha = 0
-            //            button.addTarget(self, action: #selector(LifeMapViewController.showDetailsView(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+            button.addTarget(self.controller as? AnyObject, action: #selector(CardsViewController.showDetailsView(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             self.addSubview(button)
         }
     }
@@ -87,15 +87,6 @@ class CardsScrollView: UIScrollView {
             self.contentOffset = CGPointMake(centerOffsetX, centerOffsetY)
             repositionButtons(offsetX: distanceFromCenterX, offsetY: distanceFromCenterY)
         }
-        
-//        if distanceFromCenterX > contentWidth / 10.0 {
-//            self.contentOffset = CGPointMake(centerOffsetX, currentOffset.y)
-//            repositionButtons(offsetX: distanceFromCenterX, offsetY: 0)
-//        }
-//        if distanceFromCenterY > contentHeight / 10.0 {
-//            self.contentOffset = CGPointMake(centerOffsetX, currentOffset.y)
-//            repositionButtons(offsetX: 0, offsetY: distanceFromCenterY)
-//        }
     }
     
     override func layoutSubviews() {
@@ -212,14 +203,6 @@ class CardsScrollView: UIScrollView {
                     allowed = false
                     break
                 }
-                //                if pow((center.x - newPoint.x), 2) + pow((center.y - newPoint.y), 2) < pow(distance, 2) ||
-                //                pow((abs(center.x - newPoint.x) - containerW), 2) + pow((center.y - newPoint.y), 2) < pow(distance, 2) ||
-                //                pow((center.x - newPoint.x), 2) + pow((abs(center.y - newPoint.y) - containerH), 2) < pow(distance, 2) ||
-                //                pow((abs(center.x - newPoint.x) - containerW), 2) + pow((abs(center.y - newPoint.y) - containerH), 2) < pow(distance, 2) ||
-                //                newPoint.x <= borderPadding || newPoint.y <= borderPadding || newPoint.x >= self.view.frame.width - borderPadding || newPoint.y >= self.view.frame.height - borderPadding {
-                //                    allowed = false
-                //                    break
-                //                }
             }
             if allowed == false {
                 failureCounter += 1
@@ -231,7 +214,7 @@ class CardsScrollView: UIScrollView {
             }
         }
         print("Total button quantity: \(circleCenters.count)")
-        if circleCenters.count < 10 {
+        if circleCenters.count < 80 {
             generateCircles()
         }
     }
