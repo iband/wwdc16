@@ -17,6 +17,7 @@ class DefinitionViewController: UIViewController {
     var buttonId: Int?
     
     override func viewDidLoad() {
+        self.tabBarController?.tabBar.hidden = true
         super.viewDidLoad()
         
         let dictionaryBrain = DictionaryBrain()

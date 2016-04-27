@@ -14,7 +14,7 @@ class CardsScrollView: UIScrollView {
     var firstLaunch = true
     
     private func setup() {
-        self.contentSize = CGSize(width: 1000, height: 1200)
+        self.contentSize = CGSize(width: 800, height: 1000)
         self.scrollsToTop = false
         animator = UIDynamicAnimator(referenceView: self)
     }

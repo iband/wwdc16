@@ -317,6 +317,7 @@
 				AA641DF71CCE15B300304B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

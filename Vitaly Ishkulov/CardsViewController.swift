@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CardsViewController: UIViewController {
+class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate {
 
     @IBOutlet weak var cardsScrollView: CardsScrollView!
     private let dictionaryBrain: DictionaryBrain
@@ -37,6 +37,10 @@ class CardsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        if (traitCollection.forceTouchCapability == .Available) {
+//            registerForPreviewingWithDelegate(self, sourceView: view)
+//        }
+        
         self.navigationController!.view.backgroundColor = UIColor.whiteColor()
         
         for i in 0..<totalWordsCount {
@@ -99,6 +103,9 @@ class CardsViewController: UIViewController {
             let button = BubbleButtonView(frame: frame, colorHex: color)
             button.setTitle(word, forState: .Normal)
             button.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
+//            button.titleLabel?.numberOfLines = 0 // Dynamic number of lines
+//            button.titleLabel?.lineBreakMode = .ByCharWrapping
+            button.titleLabel?.adjustsFontSizeToFitWidth = true
             button.tag = buttonId
             buttonId += 1
             globalButtonId += 1
@@ -108,6 +115,8 @@ class CardsViewController: UIViewController {
             button.alpha = 0
             button.addTarget(self, action: #selector(CardsViewController.showDetailsView(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             cardsScrollView.addSubview(button)
+            
+            registerForPreviewingWithDelegate(self, sourceView: button)
         }
     }
     
@@ -165,9 +174,6 @@ class CardsViewController: UIViewController {
                 circleCenters += [newPoint]
             }
         }
-        if circleCenters.count < 80 {
-            generateCircles()
-        }
     }
     // MARK: - Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -177,6 +183,29 @@ class CardsViewController: UIViewController {
                 destinationVC.buttonId = sender?.tag
             }
         }
+    }
+
+//    private func getButtonWithLocation(location: CGPoint) -> (button: UIButton, rect: CGRect)? {
+//        for button in buttons {
+//            let x = button.frame.origin.x - cardsScrollView.contentOffset.x
+//            let y = button.frame.origin.y - cardsScrollView.contentOffset.y
+//            let buttonRect = CGRectMake(x, y, button.frame.size.width, button.frame.size.height)
+//            if buttonRect.contains(location) {
+//                return (button, buttonRect)
+//            }
+//        }
+//        return nil
+//    }
+    func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        guard let definitionVC = storyboard?.instantiateViewControllerWithIdentifier("DefinitionViewController") as? DefinitionViewController else { return nil }
+        
+        let currentButtonView = previewingContext.sourceView
+        definitionVC.buttonId = currentButtonView.tag //element.button.tag
+        
+        return definitionVC
+    }
+    func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
+        showViewController(viewControllerToCommit, sender: self)
     }
 }
 
