@@ -35,7 +35,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="boL-5x-LpM" secondAttribute="trailing" constant="-20" id="vcu-Bk-9QV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2BV-Da-2zq"/>
+                    <navigationItem key="navigationItem" id="2BV-Da-2zq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="6Sc-r8-42H">
+                            <connections>
+                                <action selector="refresh" destination="9pv-A4-QxB" id="DYn-15-q7U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="cardsScrollView" destination="boL-5x-LpM" id="6do-mJ-ThF"/>
                         <segue destination="cvl-Ut-9FT" kind="show" identifier="showDetails" id="OFp-hg-eDK"/>
@@ -57,7 +63,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="conocimiento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ykd-WR-EIZ">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="conocimiento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ykd-WR-EIZ">
                                 <rect key="frame" x="16" y="84" width="159" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="9lk-cx-jTw"/>
@@ -75,7 +81,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="knowledge" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wdt-1B-fI5">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="knowledge" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wdt-1B-fI5">
                                 <rect key="frame" x="16" y="165" width="288" height="25.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

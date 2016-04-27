@@ -9,50 +9,14 @@
 import UIKit
 
 class CardsScrollView: UIScrollView {
-    var controller: DetailsView?
-    private var buttons: [BubbleButtonView] = []
+    var buttons: [BubbleButtonView] = []
     private var animator: UIDynamicAnimator!
-    private var circleCenters: [CGPoint] = []
-    private let circleRadius: CGFloat = 50
-    private var globalButtonId = 0
-    private var firstLaunch = true
-    
-    private let defaultCircleColor = "#00BFFF"
-    
-    var totalWordsCount: Int? // TODO: should be obtained from the dictionary of words
+    var firstLaunch = true
     
     private func setup() {
         self.contentSize = CGSize(width: 1000, height: 1200)
         self.scrollsToTop = false
         animator = UIDynamicAnimator(referenceView: self)
-    }
-    
-    func buttonsSetUp() {
-        generateCircles()
-        
-        var buttonId = 0
-        
-        for center in circleCenters {
-            
-            buttonId = globalButtonId % (totalWordsCount! - 1) + 1 // show different words on refresh
-            
-            /* TODO: data from the dictionary
-             let element = self.dataManager.jsonData["\(buttonId)"] as! NSDictionary
-             let title = element["title"] as! String
-             */
-            let frame = getFrameFromCenter(center, radius: circleRadius)
-            let button = BubbleButtonView(frame: frame, colorHex: defaultCircleColor)
-//            button.setTitle(title, forState: .Normal)
-            button.tag = buttonId
-            buttonId += 1
-            globalButtonId += 1
-            buttons.append(button)
-        }
-        for button in buttons {
-            button.alpha = 0
-            button.addTarget(self.controller as? AnyObject, action: #selector(CardsViewController.showDetailsView(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-            self.addSubview(button)
-        }
     }
     
     override init(frame: CGRect) {
@@ -65,7 +29,12 @@ class CardsScrollView: UIScrollView {
         setup()
     }
     
-    func repositionButtons(offsetX offsetX: CGFloat, offsetY: CGFloat) {
+    func refresh() {
+        firstLaunch = true
+        animateButtons()
+    }
+    
+    private func repositionButtons(offsetX offsetX: CGFloat, offsetY: CGFloat) {
         for button in buttons {
             let newCenterX = (button.center.x - offsetX + self.contentSize.width) % self.contentSize.width
             let newCenterY = (button.center.y - offsetY + self.contentSize.height) % self.contentSize.height
@@ -139,17 +108,6 @@ class CardsScrollView: UIScrollView {
             button.transform = CGAffineTransformMakeScale(1, 1)
         }
         
-        //        if button.center.x + rMin < 0 {
-        //            button.center.x += frameWidth + 2 * rMin
-        //        } else if button.center.x - rMin > frameWidth {
-        //            button.center.x -= (frameWidth + 2 * rMin)
-        //        }
-        //        if button.center.y + rMin < 0 {
-        //            button.center.y += frameHeight + 2 * rMin
-        //        } else if button.center.y - rMin > frameHeight {
-        //            button.center.y -= (frameHeight + 2 * rMin)
-        //        }
-        
         self.animator.updateItemUsingCurrentState(button)
     }
     
@@ -159,63 +117,4 @@ class CardsScrollView: UIScrollView {
         }
     }
     
-    private func getFrameFromCenter(center: CGPoint, radius: CGFloat) -> CGRect {
-        return CGRect(x: center.x - radius, y: center.y - radius, width: 2 * radius, height: 2 * radius)
-    }
-
-    private func generateCircles() {
-        // random distribution is based on Poisson Disk algorithm
-        circleCenters = []
-        let center = CGPointMake(self.contentSize.width / 2, self.contentSize.height / 2)
-        let minCentersDistance: CGFloat = circleRadius * 2 + 10
-        circleCenters += [center]
-        var i = 1
-        var failureCounter = 0
-        var totalFailureCounter = 0
-        var startPointNumber = 0
-        
-        while true {
-            if totalFailureCounter > 5000 { break }
-            
-            if failureCounter > 20 {
-                startPointNumber += 1
-                startPointNumber %= (circleCenters.count - 1)
-                failureCounter = 0
-            }
-            
-            let basePoint = circleCenters[startPointNumber]
-            let angle = Double(arc4random()) % (2 * M_PI)
-            let newPoint = CGPoint(x: basePoint.x + minCentersDistance * CGFloat(sin(angle)),
-                                   y: basePoint.y + minCentersDistance * CGFloat(cos(angle)))
-            var allowed = true
-            let borderPadding: CGFloat = 0
-            let containerW = self.contentSize.width // fill the whole scrollViewContent
-            let containerH = self.contentSize.height
-            
-            for center in circleCenters {
-                let distance: CGFloat = circleRadius * 2 + 2
-                let condition1 = pow((center.x - newPoint.x), 2) + pow((center.y - newPoint.y), 2) < pow(distance, 2)
-                let condition2 = pow((abs(center.x - newPoint.x) - containerW), 2) + pow((center.y - newPoint.y), 2) < pow(distance, 2)
-                let condition3 = pow((center.x - newPoint.x), 2) + pow((abs(center.y - newPoint.y) - containerH), 2) < pow(distance, 2)
-                let condition4 = pow((abs(center.x - newPoint.x) - containerW), 2) + pow((abs(center.y - newPoint.y) - containerH), 2) < pow(distance, 2)
-                
-                if condition1 || condition2 || condition3 || condition4 || newPoint.x <= borderPadding || newPoint.y <= borderPadding || newPoint.x >= self.contentSize.width - borderPadding || newPoint.y >= self.contentSize.height - borderPadding {
-                    allowed = false
-                    break
-                }
-            }
-            if allowed == false {
-                failureCounter += 1
-                totalFailureCounter += 1
-                continue
-            } else {
-                i += 1
-                circleCenters += [newPoint]
-            }
-        }
-        print("Total button quantity: \(circleCenters.count)")
-        if circleCenters.count < 80 {
-            generateCircles()
-        }
-    }
 }

@@ -14,9 +14,9 @@
 		AA641DF11CCE15B300304B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA641DEF1CCE15B300304B86 /* LaunchScreen.storyboard */; };
 		AA641DFA1CCE5E1300304B86 /* CardsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DF91CCE5E1300304B86 /* CardsScrollView.swift */; };
 		AA641DFC1CCE6C9D00304B86 /* BubbleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DFB1CCE6C9D00304B86 /* BubbleButtonView.swift */; };
-		AA641E041CCFD75B00304B86 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641E031CCFD75B00304B86 /* DefinitionViewController.swift */; };
 		AA641E061CCFD82F00304B86 /* DictionaryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641E051CCFD82F00304B86 /* DictionaryBrain.swift */; };
 		AA641E081CD0DBE300304B86 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = AA641E071CD0DBE300304B86 /* dictionary.json */; };
+		AA641E0C1CD1058C00304B86 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641E0B1CD1058C00304B86 /* DefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		AA641DF21CCE15B300304B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA641DF91CCE5E1300304B86 /* CardsScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsScrollView.swift; sourceTree = "<group>"; };
 		AA641DFB1CCE6C9D00304B86 /* BubbleButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleButtonView.swift; sourceTree = "<group>"; };
-		AA641E031CCFD75B00304B86 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		AA641E051CCFD82F00304B86 /* DictionaryBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryBrain.swift; sourceTree = "<group>"; };
 		AA641E071CD0DBE300304B86 /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = dictionary.json; path = ../../dictionary.json; sourceTree = "<group>"; };
+		AA641E0B1CD1058C00304B86 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +64,9 @@
 		AA641DE31CCE15B300304B86 /* Vitaly Ishkulov */ = {
 			isa = PBXGroup;
 			children = (
+				AA641E0B1CD1058C00304B86 /* DefinitionViewController.swift */,
 				AA641E051CCFD82F00304B86 /* DictionaryBrain.swift */,
 				AA641E071CD0DBE300304B86 /* dictionary.json */,
-				AA641E031CCFD75B00304B86 /* DefinitionViewController.swift */,
 				AA641DE61CCE15B300304B86 /* CardsViewController.swift */,
 				AA641DF91CCE5E1300304B86 /* CardsScrollView.swift */,
 				AA641DFB1CCE6C9D00304B86 /* BubbleButtonView.swift */,
@@ -161,7 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA641DE51CCE15B300304B86 /* AppDelegate.swift in Sources */,
-				AA641E041CCFD75B00304B86 /* DefinitionViewController.swift in Sources */,
+				AA641E0C1CD1058C00304B86 /* DefinitionViewController.swift in Sources */,
 				AA641DE71CCE15B300304B86 /* CardsViewController.swift in Sources */,
 				AA641DFC1CCE6C9D00304B86 /* BubbleButtonView.swift in Sources */,
 				AA641E061CCFD82F00304B86 /* DictionaryBrain.swift in Sources */,
