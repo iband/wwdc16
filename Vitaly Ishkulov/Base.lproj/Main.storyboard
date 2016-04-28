@@ -96,7 +96,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdP-hY-VsX">
+                            <view contentMode="scaleToFill" restorationIdentifier="exampleContainer" translatesAutoresizingMaskIntoConstraints="NO" id="JdP-hY-VsX">
                                 <rect key="frame" x="20" y="214.5" width="560" height="68"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ex4-sM-BhL">
@@ -176,8 +176,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="checkButton" destination="IW6-H9-0Sh" id="o6D-Rw-QvU"/>
+                        <outlet property="crossButton" destination="Lrf-qk-Tcy" id="tjK-cs-AUd"/>
                         <outlet property="definition" destination="Wdt-1B-fI5" id="ZRP-aR-h4W"/>
                         <outlet property="example" destination="8bw-W6-VcQ" id="yfp-qV-koP"/>
+                        <outlet property="exampleBackground" destination="JdP-hY-VsX" id="qwE-mT-Ngq"/>
+                        <outlet property="number" destination="BES-m3-d9y" id="6ZO-yo-0s3"/>
                         <outlet property="partOfSpeech" destination="v30-jK-vaB" id="unp-O3-M6Z"/>
                         <outlet property="word" destination="Ykd-WR-EIZ" id="QCd-AO-gE1"/>
                     </connections>

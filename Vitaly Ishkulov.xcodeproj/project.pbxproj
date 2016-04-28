@@ -15,8 +15,8 @@
 		AA641DFA1CCE5E1300304B86 /* CardsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DF91CCE5E1300304B86 /* CardsScrollView.swift */; };
 		AA641DFC1CCE6C9D00304B86 /* BubbleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DFB1CCE6C9D00304B86 /* BubbleButtonView.swift */; };
 		AA641E061CCFD82F00304B86 /* DictionaryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641E051CCFD82F00304B86 /* DictionaryBrain.swift */; };
-		AA641E081CD0DBE300304B86 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = AA641E071CD0DBE300304B86 /* dictionary.json */; };
 		AA641E0C1CD1058C00304B86 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641E0B1CD1058C00304B86 /* DefinitionViewController.swift */; };
+		AABF9E751CD2064400D6E218 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = AABF9E741CD2064400D6E218 /* dictionary.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		AA641DF91CCE5E1300304B86 /* CardsScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsScrollView.swift; sourceTree = "<group>"; };
 		AA641DFB1CCE6C9D00304B86 /* BubbleButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleButtonView.swift; sourceTree = "<group>"; };
 		AA641E051CCFD82F00304B86 /* DictionaryBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryBrain.swift; sourceTree = "<group>"; };
-		AA641E071CD0DBE300304B86 /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = dictionary.json; path = ../../dictionary.json; sourceTree = "<group>"; };
 		AA641E0B1CD1058C00304B86 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		AABF9E741CD2064400D6E218 /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dictionary.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,6 @@
 			children = (
 				AA641E0B1CD1058C00304B86 /* DefinitionViewController.swift */,
 				AA641E051CCFD82F00304B86 /* DictionaryBrain.swift */,
-				AA641E071CD0DBE300304B86 /* dictionary.json */,
 				AA641DE61CCE15B300304B86 /* CardsViewController.swift */,
 				AA641DF91CCE5E1300304B86 /* CardsScrollView.swift */,
 				AA641DFB1CCE6C9D00304B86 /* BubbleButtonView.swift */,
@@ -80,6 +79,7 @@
 		AA641DF81CCE5D0B00304B86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AABF9E741CD2064400D6E218 /* dictionary.json */,
 				AA641DE41CCE15B300304B86 /* AppDelegate.swift */,
 				AA641DEF1CCE15B300304B86 /* LaunchScreen.storyboard */,
 				AA641DF21CCE15B300304B86 /* Info.plist */,
@@ -147,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA641DF11CCE15B300304B86 /* LaunchScreen.storyboard in Resources */,
-				AA641E081CD0DBE300304B86 /* dictionary.json in Resources */,
+				AABF9E751CD2064400D6E218 /* dictionary.json in Resources */,
 				AA641DEE1CCE15B300304B86 /* Assets.xcassets in Resources */,
 				AA641DEC1CCE15B300304B86 /* Main.storyboard in Resources */,
 			);
