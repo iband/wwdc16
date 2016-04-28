@@ -8,7 +8,12 @@
 
 import UIKit
 
-class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate {
+protocol StoredWordsDataSource {
+    var guessedWords: [Int : Bool] { get set }
+    func updateButtonColors()
+}
+
+class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate, StoredWordsDataSource {
 
     @IBOutlet weak var cardsScrollView: CardsScrollView!
     private let dictionaryBrain: DictionaryBrain
@@ -17,11 +22,21 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate 
     private var circleCenters: [CGPoint] = []
     private let circleRadius: CGFloat = 50
     private var globalButtonId = 0
-    private var wordsLearnedStatus: [Int : Bool?] = [:]
     
     private let defaultCircleColor = "#D9D9D9"
     private let learnedCircleColor = "#BAFFBC"
     private let failedCircleColor = "#FFCABA"
+    
+    var guessedWords: [Int : Bool] = [:]
+    
+    func updateButtonColors() {
+        for button in buttons {
+            let id = button.tag
+            if guessedWords[id] != nil {
+                button.colorHex = getColorForButtonId(id)
+            }
+        }
+    }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         dictionaryBrain = DictionaryBrain()
@@ -39,10 +54,6 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate 
         super.viewDidLoad()
         
         self.navigationController!.view.backgroundColor = UIColor.whiteColor()
-        
-        for i in 0..<totalWordsCount {
-            wordsLearnedStatus[i] = nil
-        }
         
         globalButtonId = Int(arc4random()) % totalWordsCount // start with different words on launch
         
@@ -73,31 +84,36 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate 
         cardsScrollView.refresh()
     }
     
-    func buttonsSetUp() {
+    private func getColorForButtonId(id: Int) -> String {
+        if let guessed = guessedWords[id] {
+            if guessed {
+                return learnedCircleColor
+            } else {
+                return failedCircleColor
+            }
+        } else {
+            return defaultCircleColor
+        }
+    }
+    
+    private func buttonsSetUp() {
         generateCircles()
         
         var buttonId = 0
         
         for center in circleCenters {
-            
+//            buttonId += 1
             buttonId = globalButtonId % (totalWordsCount - 1) + 1 // show different words on refresh
             
             //data from the dictionary
             let word = dictionaryBrain.getWordWithNumber(buttonId)
 
             let frame = getFrameFromCenter(center, radius: circleRadius)
-            var color = defaultCircleColor
-            let learned = wordsLearnedStatus[buttonId]
-            if (learned != nil) {
-                switch learned!! {
-                case true:
-                    color = learnedCircleColor
-                case false:
-                    color = failedCircleColor
-                }
-            }
             
-            let button = BubbleButtonView(frame: frame, colorHex: color)
+            let button = BubbleButtonView(frame: frame)
+            button.colorHex = getColorForButtonId(buttonId)
+
+            
             button.setTitle(word, forState: .Normal)
             button.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
             button.titleLabel?.adjustsFontSizeToFitWidth = true
@@ -176,6 +192,7 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate 
         {
             if let destinationVC = segue.destinationViewController as? DefinitionViewController {
                 destinationVC.buttonId = sender?.tag
+                destinationVC.delegate = self
             }
         }
     }
@@ -184,13 +201,15 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate 
         guard let definitionVC = storyboard?.instantiateViewControllerWithIdentifier("DefinitionViewController") as? DefinitionViewController else { return nil }
         
         let currentButtonView = previewingContext.sourceView
-//        definitionVC.preferredContentSize = CGSize(width: 0.0, height: definitionVC.contentHeight)
+        definitionVC.delegate = self
         definitionVC.buttonId = currentButtonView.tag
         definitionVC.isPeeking = true
         
-        let gr = UIPanGestureRecognizer(target: definitionVC, action: #selector(DefinitionViewController.pan(_:)))
-        gr.delegate = definitionVC
-        definitionVC.view.addGestureRecognizer(gr)
+        
+        
+//        let gr = UIPanGestureRecognizer(target: definitionVC, action: #selector(DefinitionViewController.pan(_:)))
+//        gr.delegate = definitionVC
+//        definitionVC.view.addGestureRecognizer(gr)
         return definitionVC
     }
 //    override func showViewController(vc: UIViewController, sender: AnyObject?) {

@@ -1,0 +1,3374 @@
+{
+    "1": {
+        "definition": "the", 
+        "example": "esa mujer era la mujer que yo quería ser", 
+        "part": "article", 
+        "word": "el, la"
+    }, 
+    "2": {
+        "definition": "of, from", 
+        "example": "el hijo de un hermano mío", 
+        "part": "preposition", 
+        "word": "de"
+    }, 
+    "3": {
+        "definition": "that, which ", 
+        "example": "dice que no", 
+        "part": "conjunction", 
+        "word": "que"
+    }, 
+    "4": {
+        "definition": "and", 
+        "example": "él y ella sabían leer y escribir", 
+        "part": "conjunction", 
+        "word": "y"
+    }, 
+    "5": {
+        "definition": "to, at", 
+        "example": "se fue a la cama", 
+        "part": "preposition", 
+        "word": "a"
+    }, 
+    "6": {
+        "definition": "in, on", 
+        "example": "no está en la casa", 
+        "part": "preposition", 
+        "word": "en"
+    }, 
+    "7": {
+        "definition": "a, an", 
+        "example": "era un hombre simpático", 
+        "part": "article", 
+        "word": "un"
+    }, 
+    "8": {
+        "definition": "to be (norm)", 
+        "example": "es nuevo, es bueno", 
+        "part": "verb", 
+        "word": "ser"
+    }, 
+    "9": {
+        "definition": "[“reflexive” marker]", 
+        "example": "la abuela se acostó tranquila", 
+        "part": "pronoun", 
+        "word": "se"
+    }, 
+    "10": {
+        "definition": "no", 
+        "example": "no hay modo de negar nada", 
+        "part": "adverb", 
+        "word": "no"
+    }, 
+    "11": {
+        "definition": "to have (+ Ved) ",
+        "example": "no ha dicho nada", 
+        "part": "verb", 
+        "word": "haber"
+    }, 
+    "12": {
+        "definition": "by, for, through ", 
+        "example": "así fue por mucho tiempo", 
+        "part": "preposition", 
+        "word": "por"
+    }, 
+    "13": {
+        "definition": "with", 
+        "example": "hay un hombre con ella", 
+        "part": "preposition", 
+        "word": "con"
+    }, 
+    "14": {
+        "definition": "his/her/their/your (formal)", 
+        "example": "¿quién era? ¿Su hermana? ¿Su amiga?", 
+        "part": "adjective", 
+        "word": "su"
+    }, 
+    "15": {
+        "definition": "for, to, in order to", 
+        "example": "¡tengo una sorpresa sensacional para ti!", 
+        "part": "preposition", 
+        "word": "para"
+    }, 
+    "16": {
+        "definition": "like, as", 
+        "example": "ser compositor en España es como ser torero en Finlandia ", 
+        "part": "conjunction", 
+        "word": "como"
+    }, 
+    "17": {
+        "definition": "to be (location, change from norm) ", 
+        "example": "él está en el trabajo", 
+        "part": "verb", 
+        "word": "estar"
+    }, 
+    "18": {
+        "definition": "to have", 
+        "example": "estaba seguro de tener buena memoria", 
+        "part": "verb", 
+        "word": "tener"
+    }, 
+    "19": {
+        "definition": "[3rd person] (indirect object) ", 
+        "example": "nunca le dijo la verdad", 
+        "part": "pronoun", 
+        "word": "le"
+    }, 
+    "20": {
+        "definition": "the (+ neuter)",
+        "example": "lo mejor es estudiar mucho", 
+        "part": "article", 
+        "word": "lo"
+    }, 
+    "21": {
+        "definition": "[3rd person] (direct object-masculine) ", 
+        "example": "lo compré en la tienda", 
+        "part": "pronoun", 
+        "word": "lo"
+    }, 
+    "22": {
+        "definition": "all, every", 
+        "example": "todos los hombres son iguales", 
+        "part": "adjective", 
+        "word": "todo"
+    }, 
+    "23": {
+        "definition": "but, yet, except", 
+        "example": "no significa nada para mí, pero no puedo olvidarla ", 
+        "part": "conjunction", 
+        "word": "pero"
+    }, 
+    "24": {
+        "definition": "more", 
+        "example": "él necesitaba más dinero", 
+        "part": "adjective", 
+        "word": "más"
+    }, 
+    "25": {
+        "definition": "to do, make", 
+        "example": "he podido hacer lo que me gusta", 
+        "part": "verb", 
+        "word": "hacer"
+    }, 
+    "26": {
+        "definition": "or", 
+        "example": "sí esperaba uno o dos muertos", 
+        "part": "conjunction", 
+        "word": "o"
+    }, 
+    "27": {
+        "definition": "to be able to; can ", 
+        "example": "¡se hace lo que se puede!", 
+        "part": "verb", 
+        "word": "poder"
+    }, 
+    "28": {
+        "definition": "to tell, say", 
+        "example": "parece que dice la verdad", 
+        "part": "verb", 
+        "word": "decir"
+    }, 
+    "29": {
+        "definition": "this (masculine) [esta (feminine)]", 
+        "example": "y entendía estas cosas muy bien", 
+        "part": "adjective", 
+        "word": "este"
+    }, 
+    "30": {
+        "definition": "to go", 
+        "example": "me habían invitado a ir a su casa", 
+        "part": "verb", 
+        "word": "ir"
+    }, 
+    "31": {
+        "definition": "other, another", 
+        "example": "¿por qué no podía ser otra cosa?", 
+        "part": "adjective", 
+        "word": "otro"
+    }, 
+    "32": {
+        "definition": "that (masculine) [esa (feminine)]", 
+        "example": "¿dónde viven esas mujeres?", 
+        "part": "adjective", 
+        "word": "ese"
+    }, 
+    "33": {
+        "definition": "[3rd person] (direct object-feminine) ", 
+        "example": "la puso en su bolsillo", 
+        "part": "pronoun", 
+        "word": "la"
+    }, 
+    "34": {
+        "definition": "if, whether", 
+        "example": "si quiere cazar, vamos a cazar", 
+        "part": "conjunction", 
+        "word": "si"
+    }, 
+    "35": {
+        "definition": "me (object)", 
+        "example": "¿cuando me va a llamar?", 
+        "part": "pronoun", 
+        "word": "me"
+    }, 
+    "36": {
+        "definition": "already, still", 
+        "example": "su marido ya ha dicho todo", 
+        "part": "adverb", 
+        "word": "ya"
+    }, 
+    "37": {
+        "definition": "to see", 
+        "example": "había que subir para ver las ruinas", 
+        "part": "verb", 
+        "word": "ver"
+    }, 
+    "38": {
+        "definition": "because", 
+        "example": "lo vendo sólo porque tengo un apuro muy grande", 
+        "part": "conjunction", 
+        "word": "porque"
+    }, 
+    "39": {
+        "definition": "to give", 
+        "example": "me dio esta carta para Ud.", 
+        "part": "verb", 
+        "word": "dar"
+    }, 
+    "40": {
+        "definition": "when", 
+        "example": "aquella es de mis nietos, cuando eran bebés", 
+        "part": "conjunction", 
+        "word": "cuando"
+    }, 
+    "41": {
+        "definition": "he, [ellos] them (masculine) ", 
+        "example": "él es bastante simpático", 
+        "part": "pronoun", 
+        "word": "él"
+    }, 
+    "42": {
+        "definition": "very, really", 
+        "example": "está muy contento con mi trabajo", 
+        "part": "adverb", 
+        "word": "muy"
+    }, 
+    "43": {
+        "definition": "without", 
+        "example": "se habían quedado sin dinero", 
+        "part": "preposition", 
+        "word": "sin"
+    }, 
+    "44": {
+        "definition": "time (specific occurrence)", 
+        "example": "es la primera vez que estoy junto al mar", 
+        "part": "noun — feminine", 
+        "word": "vez"
+    }, 
+    "45": {
+        "definition": "much, many, a lot (adv) ", 
+        "example": "por lo visto tienen mucho dinero", 
+        "part": "adjective", 
+        "word": "mucho"
+    }, 
+    "46": {
+        "definition": "to know (a fact), find out ", 
+        "example": "ellos lo saben y lo reconocen", 
+        "part": "verb", 
+        "word": "saber"
+    }, 
+    "47": {
+        "definition": "what?, which?, how (+ adjective)! ", 
+        "example": "no sé qué voy a hacer", 
+        "part": "pronoun", 
+        "word": "qué"
+    }, 
+    "48": {
+        "definition": "on top of, over, about", 
+        "example": "dejó el papel sobre la mesa y se fue", 
+        "part": "preposition", 
+        "word": "sobre"
+    }, 
+    "49": {
+        "definition": "my", 
+        "example": "mi casa es su casa", 
+        "part": "adjective", 
+        "word": "mi"
+    }, 
+    "50": {
+        "definition": "some, someone (pronoun)", 
+        "example": "habló algunas palabras con el agente de negocios ", 
+        "part": "adjective", 
+        "word": "alguno"
+    }, 
+    "51": {
+        "definition": "same", 
+        "example": "pronunciando el mismo discurso en siete idiomas ", 
+        "part": "adjective", 
+        "word": "mismo"
+    }, 
+    "52": {
+        "definition": "I (subject)", 
+        "example": "¡Yo soy el padre!", 
+        "part": "pronoun", 
+        "word": "yo"
+    }, 
+    "53": {
+        "definition": "also", 
+        "example": "y también van a estar los otros", 
+        "part": "adverb", 
+        "word": "también"
+    }, 
+    "54": {
+        "definition": "until, up to, even (adv)", 
+        "example": "toda la noche, hasta las tres de la mañana", 
+        "part": "preposition", 
+        "word": "hasta"
+    }, 
+    "55": {
+        "definition": "year", 
+        "example": "no lo supo hasta casi un año después", 
+        "part": "noun — masculine", 
+        "word": "año"
+    }, 
+    "56": {
+        "definition": "two", 
+        "example": "de allí salieron dos hermanas solteras", 
+        "part": "number", 
+        "word": "dos"
+    }, 
+    "57": {
+        "definition": "to want, love", 
+        "example": "quiero que este proceso salga con limpieza", 
+        "part": "verb", 
+        "word": "querer"
+    }, 
+    "58": {
+        "definition": "between, among ", 
+        "example": "la cosa es entre tú y yo", 
+        "part": "preposition", 
+        "word": "entre"
+    }, 
+    "59": {
+        "definition": "like that ", 
+        "example": "la vida es así ", 
+        "part": "adverb", 
+        "word": "así"
+    }, 
+    "60": {
+        "definition": "first", 
+        "example": "las primeras palabras que nos enseñan a leer y escribir ", 
+        "part": "adjective", 
+        "word": "primero"
+    }, 
+    "61": {
+        "definition": "from, since", 
+        "example": "lo había pensado desde el primer momento", 
+        "part": "preposition", 
+        "word": "desde"
+    }, 
+    "62": {
+        "definition": "large, great, big", 
+        "example": "lo ha mirado a los grandes ojos negros", 
+        "part": "adjective", 
+        "word": "grande"
+    }, 
+    "63": {
+        "definition": "that (neuter) ", 
+        "example": "y eso no es todo", 
+        "part": "pronoun", 
+        "word": "eso"
+    }, 
+    "64": {
+        "definition": "not even, neither, nor ", 
+        "example": "pero ni eso me tranquilizó", 
+        "part": "conjunction", 
+        "word": "ni"
+    }, 
+    "65": {
+        "definition": "us (object)", 
+        "example": "nos vio en la calle", 
+        "part": "pronoun", 
+        "word": "nos"
+    }, 
+    "66": {
+        "definition": "to arrive", 
+        "example": "como para llegar hasta el fondo de las almas", 
+        "part": "verb", 
+        "word": "llegar"
+    }, 
+    "67": {
+        "definition": "to pass, spend (time)", 
+        "example": "tras la ventana lo veo pasar una y otra vez", 
+        "part": "verb", 
+        "word": "pasar"
+    }, 
+    "68": {
+        "definition": "time (general), weather ", 
+        "example": "he estado mucho tiempo con ella", 
+        "part": "noun — masculine", 
+        "word": "tiempo"
+    }, 
+    "69": {
+        "definition": "she, [ellas] them (feminine) ", 
+        "example": "ella es muy estudiosa", 
+        "part": "pronoun", 
+        "word": "ella"
+    }, 
+    "70": {
+        "definition": "yes", 
+        "example": "quiero una respuesta concreta: sí o no", 
+        "part": "adverb", 
+        "word": "sí"
+    }, 
+    "71": {
+        "definition": "day", 
+        "example": "cada día hay más problemas", 
+        "part": "noun — masculine", 
+        "word": "día"
+    }, 
+    "72": {
+        "definition": "one", 
+        "example": "hay uno que ya lo está haciendo", 
+        "part": "number", 
+        "word": "uno"
+    }, 
+    "73": {
+        "definition": "well", 
+        "example": "y entonces hice bien en quedarme", 
+        "part": "adverb", 
+        "word": "bien"
+    }, 
+    "74": {
+        "definition": "little, few, a little bit (adv) ", 
+        "example": "trabajó poco tiempo con él", 
+        "part": "adjective", 
+        "word": "poco"
+    }, 
+    "75": {
+        "definition": "should, ought to; to owe ", 
+        "example": "te debes calmar, le aconsejó T.", 
+        "part": "verb", 
+        "word": "deber"
+    }, 
+    "76": {
+        "definition": "so, then", 
+        "example": "vamos entonces a cambiarlo", 
+        "part": "adverb", 
+        "word": "entonces"
+    }, 
+    "77": {
+        "definition": "to put (on), get (+ adjective)",
+        "example": "puso el cuchillo en manos de M.", 
+        "part": "verb", 
+        "word": "poner"
+    }, 
+    "78": {
+        "definition": "thing", 
+        "example": "estoy ya interesado en otra cosa", 
+        "part": "noun — feminine", 
+        "word": "cosa"
+    }, 
+    "79": {
+        "definition": "so much, so many", 
+        "example": "no podía creer que haya tanta gente junta", 
+        "part": "adjective", 
+        "word": "tanto"
+    }, 
+    "80": {
+        "definition": "man, mankind, husband", 
+        "example": "yo soy un hombre de pocas necesidades", 
+        "part": "noun — masculine", 
+        "word": "hombre"
+    }, 
+    "81": {
+        "definition": "to seem, look like", 
+        "example": "parecía dormir, tan inmóvil estaba", 
+        "part": "verb", 
+        "word": "parecer"
+    }, 
+    "82": {
+        "definition": "our", 
+        "example": "no servía para nuestro país porque somos diferentes ", 
+        "part": "adjective", 
+        "word": "nuestro"
+    }, 
+    "83": {
+        "definition": "such, as, too, so", 
+        "example": "en esa mujer está todo; y por eso es tan maravillosa ", 
+        "part": "adverb", 
+        "word": "tan"
+    }, 
+    "84": {
+        "definition": "where", 
+        "example": "yo sé donde está la llave", 
+        "part": "conjunction", 
+        "word": "donde"
+    }, 
+    "85": {
+        "definition": "now", 
+        "example": "lo importante ahora es contarte lo que le pasó", 
+        "part": "adverb", 
+        "word": "ahora"
+    }, 
+    "86": {
+        "definition": "part, portion", 
+        "example": "el arte es una parte tan importante de la cultura ", 
+        "part": "noun — feminine", 
+        "word": "parte"
+    }, 
+    "87": {
+        "definition": "after", 
+        "example": "vamos a dar un paseo después de comer", 
+        "part": "adverb", 
+        "word": "después"
+    }, 
+    "88": {
+        "definition": "life", 
+        "example": "ha dedicado toda la vida a la música", 
+        "part": "noun — feminine", 
+        "word": "vida"
+    }, 
+    "89": {
+        "definition": "to remain, stay", 
+        "example": "el aire empezó a quedarse quieto", 
+        "part": "verb", 
+        "word": "quedar"
+    }, 
+    "90": {
+        "definition": "always, forever ", 
+        "example": "siempre ha sido así", 
+        "part": "adverb", 
+        "word": "siempre"
+    }, 
+    "91": {
+        "definition": "to believe, think", 
+        "example": "creo en la justicia de Dios", 
+        "part": "verb", 
+        "word": "creer"
+    }, 
+    "92": {
+        "definition": "to speak, talk", 
+        "example": "algunos hablan el idioma romaní", 
+        "part": "verb", 
+        "word": "hablar"
+    }, 
+    "93": {
+        "definition": "to take, carry", 
+        "example": "colgado al hombro llevaba un bolso", 
+        "part": "verb", 
+        "word": "llevar"
+    }, 
+    "94": {
+        "definition": "to let, leave", 
+        "example": "ella no dejó que yo lo olvidara", 
+        "part": "verb", 
+        "word": "dejar"
+    }, 
+    "95": {
+        "definition": "nothing, (not) at all ", 
+        "example": "no hay nada que hacer", 
+        "part": "pronoun", 
+        "word": "nada"
+    }, 
+    "96": {
+        "definition": "each, every", 
+        "example": "de aprender cada día un poco más", 
+        "part": "adjective", 
+        "word": "cada"
+    }, 
+    "97": {
+        "definition": "to follow, keep on", 
+        "example": "el calor sofocante que sigue al mediodía", 
+        "part": "verb", 
+        "word": "seguir"
+    }, 
+    "98": {
+        "definition": "less, fewer", 
+        "example": "no vale más ni menos que la anterior", 
+        "part": "adjective", 
+        "word": "menos"
+    }, 
+    "99": {
+        "definition": "new", 
+        "example": "marcaba el comienzo de una nueva vida para mí", 
+        "part": "adjective", 
+        "word": "nuevo"
+    }, 
+    "100": {
+        "definition": "to find", 
+        "example": "encontró un lugar apropiado para instalar la sucursal ", 
+        "part": "verb", 
+        "word": "encontrar"
+    }, 
+    "101": {
+        "definition": "something, somewhat ", 
+        "example": "tengo algo que decirte", 
+        "part": "pronoun", 
+        "word": "algo"
+    }, 
+    "102": {
+        "definition": "only, just", 
+        "example": "no siempre vestía ropa de mujer; sólo en carnaval ", 
+        "part": "adverb", 
+        "word": "sólo"
+    }, 
+    "103": {
+        "definition": "then, well then", 
+        "example": "pues venga usted cuando quiera", 
+        "part": "conjunction", 
+        "word": "pues"
+    }, 
+    "104": {
+        "definition": "to call, name", 
+        "example": "el juez se llamaba Pedro Barreda", 
+        "part": "verb", 
+        "word": "llamar"
+    }, 
+    "105": {
+        "definition": "to come", 
+        "example": "unos afirman que el jazz viene de África", 
+        "part": "verb", 
+        "word": "venir"
+    }, 
+    "106": {
+        "definition": "to think", 
+        "example": "trataba de pensar de dónde podría sacar el dinero ", 
+        "part": "verb", 
+        "word": "pensar"
+    }, 
+    "107": {
+        "definition": "that (over there)", 
+        "example": "unos veinte millones de pesetas (de aquella época)", 
+        "part": "adjective", 
+        "word": "aquel"
+    }, 
+    "108": {
+        "definition": "moment, time", 
+        "example": "estaba pasando uno de los peores momentos de mi vida ", 
+        "part": "noun — masculine", 
+        "word": "momento"
+    }, 
+    "109": {
+        "definition": "but, except, rather", 
+        "example": "no somos nosotros el centro sino ella", 
+        "part": "conjunction", 
+        "word": "sino"
+    }, 
+    "110": {
+        "definition": "this (neuter)", 
+        "example": "quiero esto o aquello", 
+        "part": "pronoun", 
+        "word": "esto"
+    }, 
+    "111": {
+        "definition": "to leave, go out", 
+        "example": "para que le abriese la reja para salir al bosque", 
+        "part": "verb", 
+        "word": "salir"
+    }, 
+    "112": {
+        "definition": "to return, to V again", 
+        "example": "los habitantes afectados puedan volver a sus casas", 
+        "part": "verb", 
+        "word": "volver"
+    }, 
+    "113": {
+        "definition": "form, shape, way", 
+        "example": "necesito estar en buena forma física", 
+        "part": "noun — feminine", 
+        "word": "forma"
+    }, 
+    "114": {
+        "definition": "before", 
+        "example": "quería verla antes de salir", 
+        "part": "adverb", 
+        "word": "antes"
+    }, 
+    "115": {
+        "definition": "good", 
+        "example": "si estaba de buen humor, nos besábamos sin ruido", 
+        "part": "adjective", 
+        "word": "bueno"
+    }, 
+    "116": {
+        "definition": "house", 
+        "example": "hoy la gente vive en la calle; no vive en su casa", 
+        "part": "noun — feminine", 
+        "word": "casa"
+    }, 
+    "117": {
+        "definition": "although, even though", 
+        "example": "aunque hay problemas, muchos se pueden evitar", 
+        "part": "conjunction", 
+        "word": "aunque"
+    }, 
+    "118": {
+        "definition": "world", 
+        "example": "no se parecía a ninguna ciudad del mundo", 
+        "part": "noun — masculine", 
+        "word": "mundo"
+    }, 
+    "119": {
+        "definition": "three", 
+        "example": "tres direcciones: diagonal, horizontal y vertical", 
+        "part": "number", 
+        "word": "tres"
+    }, 
+    "120": {
+        "definition": "such (a)", 
+        "example": "bien sabía que tal cosa era imposible", 
+        "part": "adjective", 
+        "word": "tal"
+    }, 
+    "121": {
+        "definition": "best, better (adv)", 
+        "example": "yo, al fin y al cabo, soy el mejor amigo", 
+        "part": "adjective", 
+        "word": "mejor"
+    }, 
+    "122": {
+        "definition": "to take, drink", 
+        "example": "mi padre tomó un sorbo de agua y continuó hablando ", 
+        "part": "verb", 
+        "word": "tomar"
+    }, 
+    "123": {
+        "definition": "certain, sure, true ", 
+        "example": "no sé si esto es cierto o no", 
+        "part": "adjective", 
+        "word": "cierto"
+    }, 
+    "124": {
+        "definition": "to know (someone or place)", 
+        "example": "ella conoce muy bien a Nicolás ", 
+        "part": "verb", 
+        "word": "conocer"
+    }, 
+    "125": {
+        "definition": "toward, towards", 
+        "example": "sus sentimientos hacia él son todavía tan firmes ", 
+        "part": "preposition", 
+        "word": "hacia"
+    }, 
+    "126": {
+        "definition": "how?", 
+        "example": "mamá, ¿cómo puedo vivir?", 
+        "part": "adverb", 
+        "word": "cómo"
+    }, 
+    "127": {
+        "definition": "woman, wife", 
+        "example": "su mamá es una mujer muy enferma y no puede trabajar ", 
+        "part": "noun — feminine", 
+        "word": "mujer"
+    }, 
+    "128": {
+        "definition": "to live", 
+        "example": "vamos a Buenos Aires, a vivir en la miseria", 
+        "part": "verb", 
+        "word": "vivir"
+    }, 
+    "129": {
+        "definition": "here", 
+        "example": "¡Aquí hay dos también!", 
+        "part": "adverb", 
+        "word": "aquí"
+    }, 
+    "130": {
+        "definition": "case, occasion", 
+        "example": "luego, en este caso está plenamente justificada ", 
+        "part": "noun — masculine", 
+        "word": "caso"
+    }, 
+    "131": {
+        "definition": "to feel, regret", 
+        "example": "lloraba de sentirse tan depravado", 
+        "part": "verb", 
+        "word": "sentir"
+    }, 
+    "132": {
+        "definition": "later, afterwards", 
+        "example": "luego va con su esposa y la contagia", 
+        "part": "adverb", 
+        "word": "luego"
+    }, 
+    "133": {
+        "definition": "country", 
+        "example": "de todos los países de las Américas", 
+        "part": "noun — masculine", 
+        "word": "país"
+    }, 
+    "134": {
+        "definition": "to try, treat, deal with", 
+        "example": "eso es precisamente lo que tratamos de evitar", 
+        "part": "verb", 
+        "word": "tratar"
+    }, 
+    "135": {
+        "definition": "place, position", 
+        "example": "es el lugar más lindo de la costa", 
+        "part": "noun — masculine", 
+        "word": "lugar"
+    }, 
+    "136": {
+        "definition": "you (object/familiar)", 
+        "example": "¿no te han hablado? ", 
+        "part": "pronoun", 
+        "word": "te"
+    }, 
+    "137": {
+        "definition": "person", 
+        "example": "era una persona de mucho talento", 
+        "part": "noun — feminine", 
+        "word": "persona"
+    }, 
+    "138": {
+        "definition": "larger, older, main", 
+        "example": "yo trabajé la mayor parte del tiempo", 
+        "part": "adjective", 
+        "word": "mayor"
+    }, 
+    "139": {
+        "definition": "last, final", 
+        "example": "se opuso al viaje hasta el último momento", 
+        "part": "adjective", 
+        "word": "último"
+    }, 
+    "140": {
+        "definition": "own, proper, typical", 
+        "example": "le doy dinero de mi propio bolsillo", 
+        "part": "adjective", 
+        "word": "propio"
+    }, 
+    "141": {
+        "definition": "who, whom", 
+        "example": "ahora o, quién sabe, nunca", 
+        "part": "pronoun", 
+        "word": "quien"
+    }, 
+    "142": {
+        "definition": "to look, watch", 
+        "example": "y los ojos mirando al infinito", 
+        "part": "verb", 
+        "word": "mirar"
+    }, 
+    "143": {
+        "definition": "hour, time (specific)", 
+        "example": "deben celebrarse a primera hora de la tarde", 
+        "part": "noun — feminine", 
+        "word": "hora"
+    }, 
+    "144": {
+        "definition": "no, none, nobody (pronoun) ", 
+        "example": "ninguno de mis cuatro varones se ha graduado de nada ", 
+        "part": "adjective", 
+        "word": "ninguno"
+    }, 
+    "145": {
+        "definition": "work, job, effort", 
+        "example": "pasó su vida entera dedicado a su trabajo", 
+        "part": "noun — masculine", 
+        "word": "trabajo"
+    }, 
+    "146": {
+        "definition": "almost, nearly", 
+        "example": "estamos casi siempre solos", 
+        "part": "adverb", 
+        "word": "casi"
+    }, 
+    "147": {
+        "definition": "point, dot, period", 
+        "example": "desde mi punto de vista son las más significativas ", 
+        "part": "noun — masculine", 
+        "word": "punto"
+    }, 
+    "148": {
+        "definition": "during, for (time)", 
+        "example": "durante una semana traté de no verla", 
+        "part": "adverb", 
+        "word": "durante"
+    }, 
+    "149": {
+        "definition": "any, anyone (pronoun)", 
+        "example": "en cualquier caso, necesitamos soledad", 
+        "part": "adjective", 
+        "word": "cualquier"
+    }, 
+    "150": {
+        "definition": "hand", 
+        "example": "se pueden contar con los dedos de una mano", 
+        "part": "noun — feminine", 
+        "word": "mano"
+    }, 
+    "151": {
+        "definition": "never, ever", 
+        "example": "se aprecia ahora más que nunca la libertad", 
+        "part": "adverb", 
+        "word": "nunca"
+    }, 
+    "152": {
+        "definition": "way, manner", 
+        "example": "lo hizo de manera muy informal", 
+        "part": "noun — feminine", 
+        "word": "manera"
+    }, 
+    "153": {
+        "definition": "which, who, whom", 
+        "example": "el pañuelo con el cual me limpié", 
+        "part": "pronoun", 
+        "word": "cual"
+    }, 
+    "154": {
+        "definition": "while, whereas, as long as ", 
+        "example": "nos miró mientras comía un gran trozo de pan", 
+        "part": "conjunction", 
+        "word": "mientras"
+    }, 
+    "155": {
+        "definition": "to tell, count", 
+        "example": "me contó una larga y estúpida historia", 
+        "part": "verb", 
+        "word": "contar"
+    }, 
+    "156": {
+        "definition": "end", 
+        "example": "se habrá terminado la humanidad y ése será el fin de la Historia ", 
+        "part": "noun — masculine", 
+        "word": "fin"
+    }, 
+    "157": {
+        "definition": "type, kind", 
+        "example": "reconozco tu oposición a este tipo de ideología ", 
+        "part": "noun — masculine", 
+        "word": "tipo"
+    }, 
+    "158": {
+        "definition": "people", 
+        "example": "la gente tiene miedo de perder su identidad", 
+        "part": "noun — feminine", 
+        "word": "gente"
+    }, 
+    "159": {
+        "definition": "also, as well, besides", 
+        "example": "además de español, ¿hablas algún otro idioma? ", 
+        "part": "adverb", 
+        "word": "además"
+    }, 
+    "160": {
+        "definition": "lonely, alone", 
+        "example": "se sentía solo, espantosamente solo", 
+        "part": "adjective", 
+        "word": "solo"
+    }, 
+    "161": {
+        "definition": "to begin, start", 
+        "example": "lentamente su auto empieza a avanzar", 
+        "part": "verb", 
+        "word": "empezar"
+    }, 
+    "162": {
+        "definition": "example", 
+        "example": "hay otras, por ejemplo las guerras", 
+        "part": "noun — masculine", 
+        "word": "ejemplo"
+    }, 
+    "163": {
+        "definition": "to wait, hope (for), expect", 
+        "example": "los astrónomos llevaban siglos esperando a que sucediera ", 
+        "part": "verb", 
+        "word": "esperar"
+    }, 
+    "164": {
+        "definition": "today, nowadays", 
+        "example": "ayer estuvo aquí; hoy puede estar allá", 
+        "part": "adverb", 
+        "word": "hoy"
+    }, 
+    "165": {
+        "definition": "side", 
+        "example": "está situada al lado derecho", 
+        "part": "noun — masculine", 
+        "word": "lado"
+    }, 
+    "166": {
+        "definition": "son, [plural] children", 
+        "example": "cada padre espera que su hijo sea más que él", 
+        "part": "noun — masculine", 
+        "word": "hijo"
+    }, 
+    "167": {
+        "definition": "there, over there ", 
+        "example": "allí están, junto a la playa", 
+        "part": "adverb", 
+        "word": "allí"
+    }, 
+    "168": {
+        "definition": "this one (masculine), [ésta (feminine)]", 
+        "example": "¿qué esperabas de un lugar como éste?", 
+        "part": "pronoun", 
+        "word": "éste"
+    }, 
+    "169": {
+        "definition": "problem", 
+        "example": "para resolver un problema tan sencillo", 
+        "part": "noun — masculine", 
+        "word": "problema"
+    }, 
+    "170": {
+        "definition": "bill, account", 
+        "example": "sería bueno sacar la cuenta y calcular gastos", 
+        "part": "noun — feminine", 
+        "word": "cuenta"
+    }, 
+    "171": {
+        "definition": "means, middle; pormedio: through", 
+        "example": "por medio de la música, se conocen los sentimientos", 
+        "part": "noun — masculine", 
+        "word": "medio"
+    }, 
+    "172": {
+        "definition": "against, opposite", 
+        "example": "hermanos contra hermanos y padres contra hijos", 
+        "part": "preposition", 
+        "word": "contra"
+    }, 
+    "173": {
+        "definition": "to look for", 
+        "example": "decidí volver a la calle y buscar un empleo", 
+        "part": "verb", 
+        "word": "buscar"
+    }, 
+    "174": {
+        "definition": "inside", 
+        "example": "¿o algo quedó dentro del pozo tapiado?", 
+        "part": "adverb", 
+        "word": "dentro"
+    }, 
+    "175": {
+        "definition": "long", 
+        "example": "tenía el pelo largo a la altura de los pechos", 
+        "part": "adjective", 
+        "word": "largo"
+    }, 
+    "176": {
+        "definition": "word", 
+        "example": "jamás dijo una palabra en inglés", 
+        "part": "noun — feminine", 
+        "word": "palabra"
+    }, 
+    "177": {
+        "definition": "to exist", 
+        "example": "¿puede existir alguien que sea perfecto?", 
+        "part": "verb", 
+        "word": "existir"
+    }, 
+    "178": {
+        "definition": "child, little boy", 
+        "example": "he tenido suerte desde que era niño", 
+        "part": "noun — masculine", 
+        "word": "niño"
+    }, 
+    "179": {
+        "definition": "to enter", 
+        "example": "¡este maldito no puede entrar en nuestra casa!", 
+        "part": "verb", 
+        "word": "entrar"
+    }, 
+    "180": {
+        "definition": "sin embargo: nevertheless ", 
+        "example": "el concierto tendrá, sin embargo, un significado especial ", 
+        "part": "noun — masculine", 
+        "word": "embargo"
+    }, 
+    "181": {
+        "definition": "only, unique, sole", 
+        "example": "era el único hijo varón de la familia", 
+        "part": "adjective", 
+        "word": "único"
+    }, 
+    "182": {
+        "definition": "father", 
+        "example": "¿es el padre de mi futuro hijo?", 
+        "part": "noun — masculine", 
+        "word": "padre"
+    }, 
+    "183": {
+        "definition": "to work", 
+        "example": "comenzaban a trabajar de camareros", 
+        "part": "verb", 
+        "word": "trabajar"
+    }, 
+    "184": {
+        "definition": "little, small, young", 
+        "example": "a pesar de su pequeño tamaño estaba llena de detalles ", 
+        "part": "adjective", 
+        "word": "pequeño"
+    }, 
+    "185": {
+        "definition": "tall, high", 
+        "example": "desde lo alto de los Alpes", 
+        "part": "adjective", 
+        "word": "alto"
+    }, 
+    "186": {
+        "definition": "change", 
+        "example": "podía requerir un cambio de actitud", 
+        "part": "noun — masculine", 
+        "word": "cambio"
+    }, 
+    "187": {
+        "definition": "to write", 
+        "example": "mi padre escribe unas cartas tan cortas", 
+        "part": "verb", 
+        "word": "escribir"
+    }, 
+    "188": {
+        "definition": "four", 
+        "example": "tienen cuatro patas y cuernos", 
+        "part": "number", 
+        "word": "cuatro"
+    }, 
+    "189": {
+        "definition": "there", 
+        "example": "está ahí en la mesa de luz", 
+        "part": "adverb", 
+        "word": "ahí"
+    }, 
+    "190": {
+        "definition": "to lose, miss", 
+        "example": "el golpe me hizo perder el equilibrio", 
+        "part": "verb", 
+        "word": "perder"
+    }, 
+    "191": {
+        "definition": "we (subject)", 
+        "example": "jamás lo hemos hecho nosotros", 
+        "part": "pronoun", 
+        "word": "nosotros"
+    }, 
+    "192": {
+        "definition": "history, story", 
+        "example": "los períodos más diversos de la historia del arte", 
+        "part": "noun — feminine", 
+        "word": "historia"
+    }, 
+    "193": {
+        "definition": "idea", 
+        "example": "podemos renunciar a la idea de la igualdad", 
+        "part": "noun — feminine", 
+        "word": "idea"
+    }, 
+    "194": {
+        "definition": "water", 
+        "example": "Déme usted un vaso de agua, que tengo mucha sed ", 
+        "part": "noun — feminine (with el)", 
+        "word": "agua"
+    }, 
+    "195": {
+        "definition": "to produce, cause", 
+        "example": "nunca llegó a producirse el tercer y prometido ataque ", 
+        "part": "verb", 
+        "word": "producir"
+    }, 
+    "196": {
+        "definition": "night, evening", 
+        "example": "trabaja por la mañana, por la tarde, y por la noche ", 
+        "part": "noun — feminine", 
+        "word": "noche"
+    }, 
+    "197": {
+        "definition": "city", 
+        "example": "quieren estar en la ciudad y no salir al campo ", 
+        "part": "noun — feminine", 
+        "word": "ciudad"
+    }, 
+    "198": {
+        "definition": "way, manner", 
+        "example": "hay diferencia entre el modo de hablar y el de escribir ", 
+        "part": "noun — masculine", 
+        "word": "modo"
+    }, 
+    "199": {
+        "definition": "name, noun", 
+        "example": "Susana no es mi nombre verdadero", 
+        "part": "noun — masculine", 
+        "word": "nombre"
+    }, 
+    "200": {
+        "definition": "to happen, occur", 
+        "example": "el miedo a lo que pudiera ocurrir me inmovilizó ", 
+        "part": "verb", 
+        "word": "ocurrir"
+    }, 
+    "201": {
+        "definition": "family", 
+        "example": "la familia es la unidad social más significativa", 
+        "part": "noun — feminine", 
+        "word": "familia"
+    }, 
+    "202": {
+        "definition": "reality, actuality", 
+        "example": "le habló a Rosabel, que en realidad se llamaba María ", 
+        "part": "noun — feminine", 
+        "word": "realidad"
+    }, 
+    "203": {
+        "definition": "to understand", 
+        "example": "todavía no entiendo demasiado bien lo que pasó", 
+        "part": "verb", 
+        "word": "entender"
+    }, 
+    "204": {
+        "definition": "to ask for, request", 
+        "example": "me atreví a pedirle que me diera clases", 
+        "part": "verb", 
+        "word": "pedir"
+    }, 
+    "205": {
+        "definition": "to receive", 
+        "example": "Pavlov recibe el Premio Nobel por sus estudios ", 
+        "part": "verb", 
+        "word": "recibir"
+    }, 
+    "206": {
+        "definition": "work, book, deed", 
+        "example": "la primera obra literaria de Dante fue La Vida Nueva ", 
+        "part": "noun — feminine", 
+        "word": "obra"
+    }, 
+    "207": {
+        "definition": "important", 
+        "example": "el momento más importante de la ceremonia", 
+        "part": "adjective", 
+        "word": "importante"
+    }, 
+    "208": {
+        "definition": "half, middle", 
+        "example": "la noche sorprendió a los viajeros a medio camino ", 
+        "part": "adjective", 
+        "word": "medio"
+    }, 
+    "209": {
+        "definition": "truth", 
+        "example": "¡diga la verdad! ¡Todo le acusa!", 
+        "part": "noun — feminine", 
+        "word": "verdad"
+    }, 
+    "210": {
+        "definition": "month", 
+        "example": "tendrá lugar el próximo mes de noviembre", 
+        "part": "noun — masculine", 
+        "word": "mes"
+    }, 
+    "211": {
+        "definition": "still, yet", 
+        "example": "los animales que todavía están vivos", 
+        "part": "adverb", 
+        "word": "todavía"
+    }, 
+    "212": {
+        "definition": "reason; tener razón: to be right ", 
+        "example": "es verdad, tienes razón; ella no es de San Juan", 
+        "part": "noun — feminine", 
+        "word": "razón"
+    }, 
+    "213": {
+        "definition": "en cuanto a: in terms of, regarding ", 
+        "example": "hoy hay más apatía en cuanto a estas cuestiones ", 
+        "part": "adjective", 
+        "word": "cuanto"
+    }, 
+    "214": {
+        "definition": "under, underneath", 
+        "example": "hacía dos o tres grados bajo cero", 
+        "part": "preposition", 
+        "word": "bajo"
+    }, 
+    "215": {
+        "definition": "to remember, remind", 
+        "example": "prefiero no recordar esa época de mi vida", 
+        "part": "verb", 
+        "word": "recordar"
+    }, 
+    "216": {
+        "definition": "group", 
+        "example": "¿cuál será su papel en ese grupo de trabajo?", 
+        "part": "noun — masculine", 
+        "word": "grupo"
+    }, 
+    "217": {
+        "definition": "thousand", 
+        "example": "unos mil años han pasado desde entonces", 
+        "part": "number", 
+        "word": "mil"
+    }, 
+    "218": {
+        "definition": "human", 
+        "example": "somos seres humanos, y gente normal", 
+        "part": "adjective", 
+        "word": "humano"
+    }, 
+    "219": {
+        "definition": "to finish, end", 
+        "example": "cuelga sin terminar la conversación", 
+        "part": "verb", 
+        "word": "terminar"
+    }, 
+    "220": {
+        "definition": "to allow, permit", 
+        "example": "no se me permitió jugar allí por varios días", 
+        "part": "verb", 
+        "word": "permitir"
+    }, 
+    "221": {
+        "definition": "to appear", 
+        "example": "detrás suyo, Teresa apareció por la puerta de la cocina ", 
+        "part": "verb", 
+        "word": "aparecer"
+    }, 
+    "222": {
+        "definition": "to get, acquire, obtain ", 
+        "example": "vas a robar, para conseguir plata", 
+        "part": "verb", 
+        "word": "conseguir"
+    }, 
+    "223": {
+        "definition": "to begin, start", 
+        "example": "a los veintidós años comenzó a aprender castellano ", 
+        "part": "verb", 
+        "word": "comenzar"
+    }, 
+    "224": {
+        "definition": "several, various", 
+        "example": "está constituida por varios dialectos", 
+        "part": "adjective", 
+        "word": "varios"
+    }, 
+    "225": {
+        "definition": "possible", 
+        "example": "trató de hacer el menor ruido posible para no despertarla ", 
+        "part": "adjective", 
+        "word": "posible"
+    }, 
+    "226": {
+        "definition": "to serve", 
+        "example": "destapa la botella y sirve unas copas", 
+        "part": "verb", 
+        "word": "servir"
+    }, 
+    "227": {
+        "definition": "general", 
+        "example": "es decir, algo equivalente a los genes en sentido general ", 
+        "part": "adjective", 
+        "word": "general"
+    }, 
+    "228": {
+        "definition": "to take out", 
+        "example": "la Lechuza sacó un revólver y mató a este muchacho ", 
+        "part": "verb", 
+        "word": "sacar"
+    }, 
+    "229": {
+        "definition": "to need", 
+        "example": "vas a necesitar un trabajo nuevo", 
+        "part": "verb", 
+        "word": "necesitar"
+    }, 
+    "230": {
+        "definition": "relationship, relation", 
+        "example": "he tenido una relación muy estrecha con los compositores ", 
+        "part": "noun — feminine", 
+        "word": "relación"
+    }, 
+    "231": {
+        "definition": "five", 
+        "example": "gozo de tener los cinco sentidos", 
+        "part": "number", 
+        "word": "cinco"
+    }, 
+    "232": {
+        "definition": "body", 
+        "example": "el cuerpo humano se compone de millones de células ", 
+        "part": "noun — masculine", 
+        "word": "cuerpo"
+    }, 
+    "233": {
+        "definition": "nobody, anybody ", 
+        "example": "nadie sabe nada", 
+        "part": "pronoun", 
+        "word": "nadie"
+    }, 
+    "234": {
+        "definition": "to keep, maintain", 
+        "example": "Luis cruzó los brazos y se mantuvo sereno ", 
+        "part": "verb", 
+        "word": "mantener"
+    }, 
+    "235": {
+        "definition": "fact, happening", 
+        "example": "le gustó el hecho de que yo estuviese allí", 
+        "part": "noun — masculine", 
+        "word": "hecho"
+    }, 
+    "236": {
+        "definition": "before, in the presence of ", 
+        "example": "qué hacer y cómo actuar ante estas circunstancias ", 
+        "part": "preposition", 
+        "word": "ante"
+    }, 
+    "237": {
+        "definition": "beginning, principle", 
+        "example": "tiene fiebre al principio de la enfermedad", 
+        "part": "noun — masculine", 
+        "word": "principio"
+    }, 
+    "238": {
+        "definition": "to result, turn out", 
+        "example": "todo con gran precisión; el viaje resultó perfecto ", 
+        "part": "verb", 
+        "word": "resultar"
+    }, 
+    "239": {
+        "definition": "equal, same (as)", 
+        "example": "los indios son seres humanos iguales que nosotros ", 
+        "part": "adjective", 
+        "word": "igual"
+    }, 
+    "240": {
+        "definition": "sir, Mr, lord", 
+        "example": "¿puedo pagar con dólares? Sí señor", 
+        "part": "noun — masculine", 
+        "word": "señor"
+    }, 
+    "241": {
+        "definition": "people, village", 
+        "example": "el libro no representa al pueblo portugués", 
+        "part": "noun — masculine", 
+        "word": "pueblo"
+    }, 
+    "242": {
+        "definition": "afternoon, evening", 
+        "example": "eran las dos de la tarde y yo estaba sin comer nada", 
+        "part": "noun — feminine", 
+        "word": "tarde"
+    }, 
+    "243": {
+        "definition": "second", 
+        "example": "en la segunda mitad del siglo", 
+        "part": "adjective", 
+        "word": "segundo"
+    }, 
+    "244": {
+        "definition": "to read", 
+        "example": "prefiero leer a los autores de moda", 
+        "part": "verb", 
+        "word": "leer"
+    }, 
+    "245": {
+        "definition": "to fall", 
+        "example": "no quiero caer en mi tumba siendo joven ", 
+        "part": "verb", 
+        "word": "caer"
+    }, 
+    "246": {
+        "definition": "to change", 
+        "example": "no van a cambiar las relaciones de poder ", 
+        "part": "verb", 
+        "word": "cambiar"
+    }, 
+    "247": {
+        "definition": "eye", 
+        "example": "los grandes ojos verdes la miraban con ternura ", 
+        "part": "noun — masculine", 
+        "word": "ojo"
+    }, 
+    "248": {
+        "definition": "street", 
+        "example": "llegó a la esquina de la calle La Merced y la Huancavelica ", 
+        "part": "noun — feminine", 
+        "word": "calle"
+    }, 
+    "249": {
+        "definition": "to introduce, present", 
+        "example": "P. me presentó con gravedad a una chica virgen ", 
+        "part": "verb", 
+        "word": "presentar"
+    }, 
+    "250": {
+        "definition": "white", 
+        "example": "esta foto es en blanco y negro", 
+        "part": "adjective", 
+        "word": "blanco"
+    }, 
+    "251": {
+        "definition": "to create", 
+        "example": "lo que A. creaba con las manos era un don sobrenatural ", 
+        "part": "verb", 
+        "word": "crear"
+    }, 
+    "252": {
+        "definition": "to open", 
+        "example": "todos quieren abrir la puerta para ir a jugar", 
+        "part": "verb", 
+        "word": "abrir"
+    }, 
+    "253": {
+        "definition": "book", 
+        "example": "¿está usted escribiendo un libro sobre la política? ", 
+        "part": "noun — masculine", 
+        "word": "libro"
+    }, 
+    "254": {
+        "definition": "distinct, different", 
+        "example": "abrirían las puertas a un futuro distinto para mí", 
+        "part": "adjective", 
+        "word": "distinto"
+    }, 
+    "255": {
+        "definition": "strength, force, power", 
+        "example": "hay artistas excepcionales, con una fuerza increíble ", 
+        "part": "noun — feminine", 
+        "word": "fuerza"
+    }, 
+    "256": {
+        "definition": "light", 
+        "example": "desaparece la luz hasta el oscuro", 
+        "part": "noun — feminine", 
+        "word": "luz"
+    }, 
+    "257": {
+        "definition": "according to", 
+        "example": "según su experiencia, ésa era la pista correcta", 
+        "part": "preposition", 
+        "word": "según"
+    }, 
+    "258": {
+        "definition": "saint (masculine)", 
+        "example": "todos iban detrás del Santo Patrono con rezos y cánticos ", 
+        "part": "noun — masculine", 
+        "word": "santo"
+    }, 
+    "259": {
+        "definition": "clear", 
+        "example": "esto constituye un claro precedente", 
+        "part": "adjective", 
+        "word": "claro"
+    }, 
+    "260": {
+        "definition": "al frente: facing; frente a: across from", 
+        "example": "lo Uno frente a lo Otro, el Bien frente al Mal ", 
+        "part": "noun — masc/fem (different meanings)", 
+        "word": "frente"
+    }, 
+    "261": {
+        "definition": "to consider", 
+        "example": "no podía considerar la primera hipótesis con seriedad ", 
+        "part": "verb", 
+        "word": "considerar"
+    }, 
+    "262": {
+        "definition": "friend", 
+        "example": "¿No tienes un amigo a quien me podrías presentar? ", 
+        "part": "noun — masculine", 
+        "word": "amigo"
+    }, 
+    "263": {
+        "definition": "to hear", 
+        "example": "no se oía ningún sonido", 
+        "part": "verb", 
+        "word": "oír"
+    }, 
+    "264": {
+        "definition": "whose", 
+        "example": "el oxígeno, cuyo número atómico es ", 
+        "part": "adjective", 
+        "word": "cuyo"
+    }, 
+    "265": {
+        "definition": "sense, feeling", 
+        "example": "una cantante-actriz en el sentido actual del término ", 
+        "part": "noun — masculine", 
+        "word": "sentido"
+    }, 
+    "266": {
+        "definition": "acabar de V: to have just Ved; finish", 
+        "example": "la que ahora se acaba de traducir al castellano ", 
+        "part": "verb", 
+        "word": "acabar"
+    }, 
+    "267": {
+        "definition": "step, pace", 
+        "example": "sí, la escritura fue un paso decisivo", 
+        "part": "noun — masculine", 
+        "word": "paso"
+    }, 
+    "268": {
+        "definition": "situation", 
+        "example": "¿cómo es la situación allí actualmente?", 
+        "part": "noun — feminine", 
+        "word": "situación"
+    }, 
+    "269": {
+        "definition": "you (subject/formal)", 
+        "example": "los tiene usted, señor alcalde ", 
+        "part": "pronoun", 
+        "word": "usted"
+    }, 
+    "270": {
+        "definition": "rather, fairly, quite a bit (adv) ", 
+        "example": "estoy bastante satisfecho con mi vida", 
+        "part": "adjective", 
+        "word": "bastante"
+    }, 
+    "271": {
+        "definition": "to convert, change, become", 
+        "example": "el café llegó a convertirse en la bebida más popular de Cuba ", 
+        "part": "verb", 
+        "word": "convertir"
+    }, 
+    "272": {
+        "definition": "(pl) thank you; grace, favor ", 
+        "example": "bueno, gracias por tu tiempo, ¿eh?", 
+        "part": "noun — feminine", 
+        "word": "gracia"
+    }, 
+    "273": {
+        "definition": "century, age", 
+        "example": "los poetas más populares del siglo XX", 
+        "part": "noun — masculine", 
+        "word": "siglo"
+    }, 
+    "274": {
+        "definition": "god, divinity", 
+        "example": "ahora sé que hay un Dios en los cielos", 
+        "part": "noun — masculine", 
+        "word": "dios"
+    }, 
+    "275": {
+        "definition": "bad", 
+        "example": "éste se lamentó de su mala suerte", 
+        "part": "adjective", 
+        "word": "malo"
+    }, 
+    "276": {
+        "definition": "earth, land, ground", 
+        "example": "la tierra daba el maíz, el trigo y el arroz", 
+        "part": "noun — feminine", 
+        "word": "tierra"
+    }, 
+    "277": {
+        "definition": "paper, role, part", 
+        "example": "el poco papel que tenemos lo dedicamos a libros ", 
+        "part": "noun — masculine", 
+        "word": "papel"
+    }, 
+    "278": {
+        "definition": "mother", 
+        "example": "ahora está casada, es madre de familia", 
+        "part": "noun — feminine", 
+        "word": "madre"
+    }, 
+    "279": {
+        "definition": "neither, nor, either", 
+        "example": "porque yo no la conozco y él tampoco la conoce ", 
+        "part": "adverb", 
+        "word": "tampoco"
+    }, 
+    "280": {
+        "definition": "social", 
+        "example": "no me gusta la vida social, no voy a ninguna parte", 
+        "part": "adjective", 
+        "word": "social"
+    }, 
+    "281": {
+        "definition": "old, aged", 
+        "example": "el viejo tiene como ochenta años, y está loco", 
+        "part": "adjective", 
+        "word": "viejo"
+    }, 
+    "282": {
+        "definition": "still, yet", 
+        "example": "se está muriendo; aún está en coma", 
+        "part": "adverb", 
+        "word": "aún"
+    }, 
+    "283": {
+        "definition": "theme, subject, topic", 
+        "example": "entre ellos pues está el tema de la ecología", 
+        "part": "noun — masculine", 
+        "word": "tema"
+    }, 
+    "284": {
+        "definition": "political", 
+        "example": "nos afiliamos a un partido político", 
+        "part": "adjective", 
+        "word": "político"
+    }, 
+    "285": {
+        "definition": "Spanish", 
+        "example": "la lengua española de hoy es el castellano", 
+        "part": "adjective", 
+        "word": "español"
+    }, 
+    "286": {
+        "definition": "to win, earn", 
+        "example": "a los diez años ganó el Premio Nobel", 
+        "part": "verb", 
+        "word": "ganar"
+    }, 
+    "287": {
+        "definition": "to form", 
+        "example": "sus componentes se marchaban para formar sus propios grupos ", 
+        "part": "verb", 
+        "word": "formar"
+    }, 
+    "288": {
+        "definition": "kind, class, order", 
+        "example": "¿qué otra clase de música le interesa?", 
+        "part": "noun — feminine", 
+        "word": "clase"
+    }, 
+    "289": {
+        "definition": "to bring, carry", 
+        "example": "sí, me trae un zumo de naranjas, por favor", 
+        "part": "verb", 
+        "word": "traer"
+    }, 
+    "290": {
+        "definition": "to divide, leave; a partir de: starting ", 
+        "example": "a partir de los cuatro minutos la tarifa es estable ", 
+        "part": "verb", 
+        "word": "partir"
+    }, 
+    "291": {
+        "definition": "money", 
+        "example": "¿hay mucho dinero?, ¿es muy rico?", 
+        "part": "noun — masculine", 
+        "word": "dinero"
+    }, 
+    "292": {
+        "definition": "who?, whom?", 
+        "example": "¿quién es el padre de su hijo?", 
+        "part": "pronoun", 
+        "word": "quién"
+    }, 
+    "293": {
+        "definition": "to die", 
+        "example": "la pobre murió de pulmonía meses después", 
+        "part": "verb", 
+        "word": "morir"
+    }, 
+    "294": {
+        "definition": "including, even (adv)", 
+        "example": "e incluso puede detectar cuando hay errores", 
+        "part": "adverb", 
+        "word": "incluso"
+    }, 
+    "295": {
+        "definition": "field, country", 
+        "example": "mi campo principal es la enfermedad coronaria ", 
+        "part": "noun — masculine", 
+        "word": "campo"
+    }, 
+    "296": {
+        "definition": "to accept", 
+        "example": "A. estuvo indecisa en aceptar su petición de matrimonio ", 
+        "part": "verb", 
+        "word": "aceptar"
+    }, 
+    "297": {
+        "definition": "perhaps, maybe ", 
+        "example": "quizás sí, pero de otra forma", 
+        "part": "adverb", 
+        "word": "quizás"
+    }, 
+    "298": {
+        "definition": "head (part of body)", 
+        "example": "planteaba muchas preguntas en mi cabeza ", 
+        "part": "noun — feminine", 
+        "word": "cabeza"
+    }, 
+    "299": {
+        "definition": "to fulfill, carry out", 
+        "example": "el viaje se realizó en noviembre", 
+        "part": "verb", 
+        "word": "realizar"
+    }, 
+    "300": {
+        "definition": "hundred", 
+        "example": "se pueda confiar ciento por ciento", 
+        "part": "number", 
+        "word": "ciento"
+    }, 
+    "301": {
+        "definition": "badly", 
+        "example": "mucha gente habla mal de él", 
+        "part": "adverb", 
+        "word": "mal"
+    }, 
+    "302": {
+        "definition": "order; sequence (masculine), religious order (feminine)", 
+        "example": "hay que poner todo en orden de prioridad ", 
+        "part": "noun — masc/fem (different meanings)", 
+        "word": "orden"
+    }, 
+    "303": {
+        "definition": "courtesy title (masculine), Mr, gift ", 
+        "example": "¿cómo era don Manuel?", 
+        "part": "noun — masculine", 
+        "word": "don"
+    }, 
+    "304": {
+        "definition": "week", 
+        "example": "no todos los días, pero varios días de la semana ", 
+        "part": "noun — feminine", 
+        "word": "semana"
+    }, 
+    "305": {
+        "definition": "to suppose, assume", 
+        "example": "era absurdo suponer que la guerrilla cambiara sus planes ", 
+        "part": "verb", 
+        "word": "suponer"
+    }, 
+    "306": {
+        "definition": "to understand", 
+        "example": "los había leído todos, sin comprender mucho", 
+        "part": "verb", 
+        "word": "comprender"
+    }, 
+    "307": {
+        "definition": "al final: finally, in the end", 
+        "example": "pero al final, el resultado es la perfección", 
+        "part": "noun — masc/fem (different meanings)", 
+        "word": "final"
+    }, 
+    "308": {
+        "definition": "interest", 
+        "example": "usted, de verdad, sí tiene interés en este tema", 
+        "part": "noun — masculine", 
+        "word": "interés"
+    }, 
+    "309": {
+        "definition": "following, next", 
+        "example": "al día siguiente se levantó más decidido que nunca ", 
+        "part": "adjective", 
+        "word": "siguiente"
+    }, 
+    "310": {
+        "definition": "view, sight", 
+        "example": "era un territorio fértil con una hermosa vista hacia la cordillera ", 
+        "part": "noun — feminine", 
+        "word": "vista"
+    }, 
+    "311": {
+        "definition": "to achieve, get, manage", 
+        "example": "un director no puede lograr buenos resultados sin ayuda ", 
+        "part": "verb", 
+        "word": "lograr"
+    }, 
+    "312": {
+        "definition": "the rest, others", 
+        "example": "serán la envidia de los demás colegas latinoamericanos ", 
+        "part": "adjective", 
+        "word": "demás"
+    }, 
+    "313": {
+        "definition": "accord; de acuerdo: in agreement", 
+        "example": "estoy de acuerdo con esa interpretación ", 
+        "part": "noun — masculine", 
+        "word": "acuerdo"
+    }, 
+    "314": {
+        "definition": "difficult, hard", 
+        "example": "es duro, difícil tomar una decisión como ésta", 
+        "part": "adjective", 
+        "word": "difícil"
+    }, 
+    "315": {
+        "definition": "number", 
+        "example": "ella escribía su número telefónico en un papelito ", 
+        "part": "noun — masculine", 
+        "word": "número"
+    }, 
+    "316": {
+        "definition": "to explain", 
+        "example": "¿podría explicar los detalles de este análisis?", 
+        "part": "verb", 
+        "word": "explicar"
+    }, 
+    "317": {
+        "definition": "black", 
+        "example": "la existencia de un agujero negro en la galaxia M", 
+        "part": "adjective", 
+        "word": "negro"
+    }, 
+    "318": {
+        "definition": "bottom, end", 
+        "example": "ese es el sistema, y en el fondo funciona", 
+        "part": "noun — masculine", 
+        "word": "fondo"
+    }, 
+    "319": {
+        "definition": "road, route, path", 
+        "example": "es un camino muy largo el que nos queda por recorrer ", 
+        "part": "noun — masculine", 
+        "word": "camino"
+    }, 
+    "320": {
+        "definition": "voice", 
+        "example": "un hombre de voz vibrante y rica empezó a cantar ", 
+        "part": "noun — feminine", 
+        "word": "voz"
+    }, 
+    "321": {
+        "definition": "study, learning", 
+        "example": "he colaborado en un estudio de epidemiología descriptiva ", 
+        "part": "noun — masculine", 
+        "word": "estudio"
+    }, 
+    "322": {
+        "definition": "necessary", 
+        "example": "ahora es necesario dirigir más oraciones a Dios", 
+        "part": "adjective", 
+        "word": "necesario"
+    }, 
+    "323": {
+        "definition": "to ask (a question)", 
+        "example": "les voy a preguntar si quieren comer", 
+        "part": "verb", 
+        "word": "preguntar"
+    }, 
+    "324": {
+        "definition": "there, over there", 
+        "example": "miren allá, cerca del puente", 
+        "part": "adverb", 
+        "word": "allá"
+    }, 
+    "325": {
+        "definition": "to touch, play (instrument)", 
+        "example": "se acercó hasta tocar su rodilla con la mía", 
+        "part": "verb", 
+        "word": "tocar"
+    }, 
+    "326": {
+        "definition": "value, worth", 
+        "example": "hay que descubrir el valor artístico de la obra de arte ", 
+        "part": "noun — masculine", 
+        "word": "valor"
+    }, 
+    "327": {
+        "definition": "to recognize, admit ", 
+        "example": "no pudo reconocer quién era", 
+        "part": "verb", 
+        "word": "reconocer"
+    }, 
+    "328": {
+        "definition": "to study", 
+        "example": "Adam quiere estudiar teología y ser sacerdote", 
+        "part": "verb", 
+        "word": "estudiar"
+    }, 
+    "329": {
+        "definition": "to reach, catch up with", 
+        "example": "la economía tiene posibilidades de alcanzar la prosperidad ", 
+        "part": "verb", 
+        "word": "alcanzar"
+    }, 
+    "330": {
+        "definition": "to be born", 
+        "example": "Picasso nació en Málaga en ", 
+        "part": "verb", 
+        "word": "nacer"
+    }, 
+    "331": {
+        "definition": "to direct, manage", 
+        "example": "usted dirigió la Orquesta Nacional en", 
+        "part": "verb", 
+        "word": "dirigir"
+    }, 
+    "332": {
+        "definition": "to run", 
+        "example": "ahorita corre tres kilómetros y medio", 
+        "part": "verb", 
+        "word": "correr"
+    }, 
+    "333": {
+        "definition": "measure; a medida que: to the extent", 
+        "example": "el artista crece a medida que madura ", 
+        "part": "noun — feminine", 
+        "word": "medida"
+    }, 
+    "334": {
+        "definition": "younger, youngest", 
+        "example": "E. era el menor de los hermanos", 
+        "part": "adjective", 
+        "word": "menor"
+    }, 
+    "335": {
+        "definition": "too much, too many", 
+        "example": "esta casa es demasiado grande para una persona ", 
+        "part": "adjective", 
+        "word": "demasiado"
+    }, 
+    "336": {
+        "definition": "only", 
+        "example": "la opinión es solamente una hipótesis", 
+        "part": "adverb", 
+        "word": "solamente"
+    }, 
+    "337": {
+        "definition": "well...", 
+        "example": "bueno, ¿y ahora qué hacemos?", 
+        "part": "adverb", 
+        "word": "bueno"
+    }, 
+    "338": {
+        "definition": "to use, utilize", 
+        "example": "sería una buena idea utilizar colores pálidos ", 
+        "part": "verb", 
+        "word": "utilizar"
+    }, 
+    "339": {
+        "definition": "center, middle, downtown", 
+        "example": "no necesitan estar solos en el centro del escenario ", 
+        "part": "noun — masculine", 
+        "word": "centro"
+    }, 
+    "340": {
+        "definition": "necessity, need", 
+        "example": "sentía la necesidad de ser comprendido", 
+        "part": "noun — feminine", 
+        "word": "necesidad"
+    }, 
+    "341": {
+        "definition": "condition", 
+        "example": "afecta a la condición física de todos los órganos ", 
+        "part": "noun — feminine", 
+        "word": "condición"
+    }, 
+    "342": {
+        "definition": "to pay", 
+        "example": "estamos tratando de pagar esta deuda", 
+        "part": "verb", 
+        "word": "pagar"
+    }, 
+    "343": {
+        "definition": "it (subject-neuter)", 
+        "example": "¿qué se perdía con ello?", 
+        "part": "pronoun", 
+        "word": "ello"
+    }, 
+    "344": {
+        "definition": "lack, shortage", 
+        "example": "sería una locura, una falta de ese sentido de la realidad ", 
+        "part": "noun — feminine", 
+        "word": "falta"
+    }, 
+    "345": {
+        "definition": "to help", 
+        "example": "espero ganar dinero para ayudar a mi pobre madre ", 
+        "part": "verb", 
+        "word": "ayudar"
+    }, 
+    "346": {
+        "definition": "ten", 
+        "example": "a mí me bastaban los diez mandamientos", 
+        "part": "number", 
+        "word": "diez"
+    }, 
+    "347": {
+        "definition": "a través: across, over, through", 
+        "example": "los sentimientos que han llegado a mí a través de la música ", 
+        "part": "adverb", 
+        "word": "través"
+    }, 
+    "348": {
+        "definition": "old, ancient, former", 
+        "example": "es una de las obras más antiguas - fines del siglo XIII ", 
+        "part": "adjective", 
+        "word": "antiguo"
+    }, 
+    "349": {
+        "definition": "your (sg/familiar)", 
+        "example": "ésta es tu casa y ésta es tu cama", 
+        "part": "adjective", 
+        "word": "tu"
+    }, 
+    "350": {
+        "definition": "age", 
+        "example": "se acercaba a la edad de encontrar un hombre con quien casarse ", 
+        "part": "noun — feminine", 
+        "word": "edad"
+    }, 
+    "351": {
+        "definition": "state, condition, status", 
+        "example": "hay un estado de incertidumbre que flota en el ambiente ", 
+        "part": "noun — masculine", 
+        "word": "estado"
+    }, 
+    "352": {
+        "definition": "being", 
+        "example": "se puede ser un ser humano perfecto y un bárbaro en cultura ", 
+        "part": "noun — masculine", 
+        "word": "ser"
+    }, 
+    "353": {
+        "definition": "to be pleasing to", 
+        "example": "¡no me gusta que te acaricie!", 
+        "part": "verb", 
+        "word": "gustar"
+    }, 
+    "354": {
+        "definition": "door", 
+        "example": "¿por dónde estará la puerta de salida?", 
+        "part": "noun — feminine", 
+        "word": "puerta"
+    }, 
+    "355": {
+        "definition": "to play (sport/game) ", 
+        "example": "puede jugar a la pelota", 
+        "part": "verb", 
+        "word": "jugar"
+    }, 
+    "356": {
+        "definition": "face, expression", 
+        "example": "aparece la cara del hombre con sus bigotes de cepillo ", 
+        "part": "noun — feminine", 
+        "word": "cara"
+    }, 
+    "357": {
+        "definition": "me (object prep) ", 
+        "example": "el regalo era para mí", 
+        "part": "pronoun", 
+        "word": "mí"
+    }, 
+    "358": {
+        "definition": "time, age, period", 
+        "example": "en la época romana se utilizaba más el bronce", 
+        "part": "noun — feminine", 
+        "word": "época"
+    }, 
+    "359": {
+        "definition": "color", 
+        "example": "coincide con los colores primarios: rojo, azul y amarillo ", 
+        "part": "noun — masculine", 
+        "word": "color"
+    }, 
+    "360": {
+        "definition": "to listen to", 
+        "example": "tuvo oportunidad de escuchar comentarios de viajeros ", 
+        "part": "verb", 
+        "word": "escuchar"
+    }, 
+    "361": {
+        "definition": "experience", 
+        "example": "tengo experiencia de la vida y del amor", 
+        "part": "noun — feminine", 
+        "word": "experiencia"
+    }, 
+    "362": {
+        "definition": "movement", 
+        "example": "estaba encabezando un movimiento de subversión ", 
+        "part": "noun — masculine", 
+        "word": "movimiento"
+    }, 
+    "363": {
+        "definition": "to fulfill", 
+        "example": "necesita algo más para cumplir su trabajo", 
+        "part": "verb", 
+        "word": "cumplir"
+    }, 
+    "364": {
+        "definition": "special", 
+        "example": "siento también una especial predilección por Stravinski ", 
+        "part": "adjective", 
+        "word": "especial"
+    }, 
+    "365": {
+        "definition": "different, separate", 
+        "example": "en un entorno urbano el reto, en cambio, es diferente ", 
+        "part": "adjective", 
+        "word": "diferente"
+    }, 
+    "366": {
+        "definition": "sorrow; a pesar de: in spite of ", 
+        "example": "comprendí su decisión a pesar de que me entristeciera mucho ", 
+        "part": "noun — masculine", 
+        "word": "pesar"
+    }, 
+    "367": {
+        "definition": "possibility", 
+        "example": "debes considerar la posibilidad de dar en adopción a tu bebé ", 
+        "part": "noun — feminine", 
+        "word": "posibilidad"
+    }, 
+    "368": {
+        "definition": "to offer, present", 
+        "example": "el Hotel D. ofrece su menú en francés", 
+        "part": "verb", 
+        "word": "ofrecer"
+    }, 
+    "369": {
+        "definition": "to discover", 
+        "example": "otro policía descubrió un paquete en el suelo", 
+        "part": "verb", 
+        "word": "descubrir"
+    }, 
+    "370": {
+        "definition": "previous, preceding", 
+        "example": "en términos de dólares, el anterior fue un año sobresaliente ", 
+        "part": "adjective", 
+        "word": "anterior"
+    }, 
+    "371": {
+        "definition": "game, play, sport", 
+        "example": "he escrito algunos libros de juego y diversión", 
+        "part": "noun — masculine", 
+        "word": "juego"
+    }, 
+    "372": {
+        "definition": "to raise, lift", 
+        "example": "de pronto se levantó y fue hasta su biblioteca", 
+        "part": "verb", 
+        "word": "levantar"
+    }, 
+    "373": {
+        "definition": "poor", 
+        "example": "el pobre, va a tener que trabajar", 
+        "part": "adjective", 
+        "word": "pobre"
+    }, 
+    "374": {
+        "definition": "air, wind, appearance", 
+        "example": "el helicóptero puede estacionarse en el aire", 
+        "part": "noun — masculine", 
+        "word": "aire"
+    }, 
+    "375": {
+        "definition": "six", 
+        "example": "cinco por seis son treinta", 
+        "part": "number", 
+        "word": "seis"
+    }, 
+    "376": {
+        "definition": "to try, attempt", 
+        "example": "¿somos tan tontos como para intentar repetir la historia? ", 
+        "part": "verb", 
+        "word": "intentar"
+    }, 
+    "377": {
+        "definition": "war, warfare", 
+        "example": "qué pronto se olvida a las víctimas de una guerra ", 
+        "part": "noun — feminine", 
+        "word": "guerra"
+    }, 
+    "378": {
+        "definition": "together with, next to", 
+        "example": "trabajábamos juntos en el Congreso", 
+        "part": "adverb", 
+        "word": "junto"
+    }, 
+    "379": {
+        "definition": "result, outcome", 
+        "example": "fue el resultado de muchas acciones que parecían inútiles ", 
+        "part": "noun — masculine", 
+        "word": "resultado"
+    }, 
+    "380": {
+        "definition": "to use", 
+        "example": "mi teléfono no funciona y quisiera usar el tuyo", 
+        "part": "verb", 
+        "word": "usar"
+    }, 
+    "381": {
+        "definition": "to decide", 
+        "example": "¿cómo decidió usted ser director de orquesta?", 
+        "part": "verb", 
+        "word": "decidir"
+    }, 
+    "382": {
+        "definition": "to repeat", 
+        "example": "no voy a repetir este pecado más en la vida", 
+        "part": "verb", 
+        "word": "repetir"
+    }, 
+    "383": {
+        "definition": "to forget", 
+        "example": "no he podido olvidar aquella noche de tu despedida ", 
+        "part": "verb", 
+        "word": "olvidar"
+    }, 
+    "384": {
+        "definition": "law, bill, rule", 
+        "example": "el casamiento civil es una ley de este país", 
+        "part": "noun — feminine", 
+        "word": "ley"
+    }, 
+    "385": {
+        "definition": "aspect, appearance", 
+        "example": "uno de los aspectos más controvertidos del modernismo ", 
+        "part": "noun — masculine", 
+        "word": "aspecto"
+    }, 
+    "386": {
+        "definition": "foot, base", 
+        "example": "está enfermo y tiene un pie en el cementerio", 
+        "part": "noun — masculine", 
+        "word": "pie"
+    }, 
+    "387": {
+        "definition": "to be worth, cost", 
+        "example": "¡estas joyas tienen que valer muchos millones!", 
+        "part": "verb", 
+        "word": "valer"
+    }, 
+    "388": {
+        "definition": "kind, sort, species", 
+        "example": "el único que llegó a ser una especie de monstruo fui yo ", 
+        "part": "noun — feminine", 
+        "word": "especie"
+    }, 
+    "389": {
+        "definition": "to eat", 
+        "example": "te comiste todo el queso", 
+        "part": "verb", 
+        "word": "comer"
+    }, 
+    "390": {
+        "definition": "service, helpfulness", 
+        "example": "es un servicio público que beneficia al individuo ", 
+        "part": "noun — masculine", 
+        "word": "servicio"
+    }, 
+    "391": {
+        "definition": "close, near", 
+        "example": "nos sentábamos cerca del fuego", 
+        "part": "adverb", 
+        "word": "cerca"
+    }, 
+    "392": {
+        "definition": "to show", 
+        "example": "con un dedo me mostró un agujerito negro", 
+        "part": "verb", 
+        "word": "mostrar"
+    }, 
+    "393": {
+        "definition": "activity, action", 
+        "example": "pienso que el arte es una actividad mental", 
+        "part": "noun — feminine", 
+        "word": "actividad"
+    }, 
+    "394": {
+        "definition": "third", 
+        "example": "en uno de los primeros años de la tercera década del siglo ", 
+        "part": "adjective", 
+        "word": "tercero"
+    }, 
+    "395": {
+        "definition": "which?", 
+        "example": "primero dime cuál es tu nombre", 
+        "part": "pronoun", 
+        "word": "cuál"
+    }, 
+    "396": {
+        "definition": "soon, quick", 
+        "example": "pronto lo tuvieron todo hecho", 
+        "part": "adverb", 
+        "word": "pronto"
+    }, 
+    "397": {
+        "definition": "to occupy, use ", 
+        "example": "volvió a ocupar su lugar", 
+        "part": "verb", 
+        "word": "ocupar"
+    }, 
+    "398": {
+        "definition": "question, matter", 
+        "example": "creo que es una cuestión de sinceridad", 
+        "part": "noun — feminine", 
+        "word": "cuestión"
+    }, 
+    "399": {
+        "definition": "doubt", 
+        "example": "no existía duda alguna en que era hijo mío", 
+        "part": "noun — feminine", 
+        "word": "duda"
+    }, 
+    "400": {
+        "definition": "difference", 
+        "example": "¿sabés la diferencia entre el contador y el matemático? ", 
+        "part": "noun — feminine", 
+        "word": "diferencia"
+    }, 
+    "401": {
+        "definition": "morning, tomorrow", 
+        "example": "sí, todo el día está allá, desde la mañana hasta la tarde ", 
+        "part": "noun — feminine", 
+        "word": "mañana"
+    }, 
+    "402": {
+        "definition": "to move, incite", 
+        "example": "después de mover a uno y otro lado la cabeza ", 
+        "part": "verb", 
+        "word": "mover"
+    }, 
+    "403": {
+        "definition": "to continue", 
+        "example": "da la orden para continuar la marcha", 
+        "part": "verb", 
+        "word": "continuar"
+    }, 
+    "404": {
+        "definition": "quantity, amount", 
+        "example": "todo esto genera una cantidad de datos formidables ", 
+        "part": "noun — feminine", 
+        "word": "cantidad"
+    }, 
+    "405": {
+        "definition": "action, act, deed", 
+        "example": "esta acción legal pretendía acelerar la liberalización económica ", 
+        "part": "noun — feminine", 
+        "word": "acción"
+    }, 
+    "406": {
+        "definition": "to happen", 
+        "example": "¿qué pasa?, ¿sucedió algo malo?, ¿algún problema? ", 
+        "part": "verb", 
+        "word": "suceder"
+    }, 
+    "407": {
+        "definition": "to set, fix, [se] notice", 
+        "example": "lo primero que hizo fue fijar fecha definitiva", 
+        "part": "verb", 
+        "word": "fijar"
+    }, 
+    "408": {
+        "definition": "society", 
+        "example": "creaban una sociedad multicultural que vivía en paz ", 
+        "part": "noun — feminine", 
+        "word": "sociedad"
+    }, 
+    "409": {
+        "definition": "to refer (to)", 
+        "example": "me voy a referir a los dos últimos puntos", 
+        "part": "verb", 
+        "word": "referir"
+    }, 
+    "410": {
+        "definition": "to come near", 
+        "example": "él me miró, se acercó, me besó", 
+        "part": "verb", 
+        "word": "acercar"
+    }, 
+    "411": {
+        "definition": "capable, able", 
+        "example": "¿es usted capaz de describir su propia carrera? ", 
+        "part": "adjective", 
+        "word": "capaz"
+    }, 
+    "412": {
+        "definition": "short, low", 
+        "example": "las puertas de madera son bajas y rudas", 
+        "part": "adjective", 
+        "word": "bajo"
+    }, 
+    "413": {
+        "definition": "free, vacant", 
+        "example": "estaré más tranquilo y con más tiempo libre", 
+        "part": "adjective", 
+        "word": "libre"
+    }, 
+    "414": {
+        "definition": "natural", 
+        "example": "decidió que su conducta era natural y sincera", 
+        "part": "adjective", 
+        "word": "natural"
+    }, 
+    "415": {
+        "definition": "to dedicate, devote", 
+        "example": "cuando se quedó sola se dedicó más horas a escribir ", 
+        "part": "verb", 
+        "word": "dedicar"
+    }, 
+    "416": {
+        "definition": "really, actually, in fact", 
+        "example": "¿antes de nacer nosotros existía realmente el mundo? ", 
+        "part": "adverb", 
+        "word": "realmente"
+    }, 
+    "417": {
+        "definition": "peso (money), weight, load", 
+        "example": "por lo menos son quince mil pesos por mes", 
+        "part": "noun — masculine", 
+        "word": "peso"
+    }, 
+    "418": {
+        "definition": "effect", 
+        "example": "para estudiar el efecto del Sol sobre la emisión de rayos X ", 
+        "part": "noun — masculine", 
+        "word": "efecto"
+    }, 
+    "419": {
+        "definition": "object, thing", 
+        "example": "será objeto de estudio para las predicciones meteorológicas ", 
+        "part": "noun — masculine", 
+        "word": "objeto"
+    }, 
+    "420": {
+        "definition": "true, real", 
+        "example": "cuyo verdadero nombre no conoció nadie", 
+        "part": "adjective", 
+        "word": "verdadero"
+    }, 
+    "421": {
+        "definition": "where?", 
+        "example": "¿Dónde está escrito esto en la historia?", 
+        "part": "adverb", 
+        "word": "dónde"
+    }, 
+    "422": {
+        "definition": "to learn", 
+        "example": "no hay manera de aprender el otro lenguaje ", 
+        "part": "verb", 
+        "word": "aprender"
+    }, 
+    "423": {
+        "definition": "love", 
+        "example": "¡por el amor más grande del mundo; el amor de Dios! ", 
+        "part": "noun — masculine", 
+        "word": "amor"
+    }, 
+    "424": {
+        "definition": "death", 
+        "example": "sólo la muerte no tiene remedio, Juan", 
+        "part": "noun — feminine", 
+        "word": "muerte"
+    }, 
+    "425": {
+        "definition": "party, group, (sports) match", 
+        "example": "fue consejero de un candidato del partido conservador ", 
+        "part": "noun — masculine", 
+        "word": "partido"
+    }, 
+    "426": {
+        "definition": "economic", 
+        "example": "es necesario tener progreso económico", 
+        "part": "adjective", 
+        "word": "económico"
+    }, 
+    "427": {
+        "definition": "right, justice, law", 
+        "example": "los catalanes tienen el derecho a usar los dos idiomas que son suyos ", 
+        "part": "noun — masculine", 
+        "word": "derecho"
+    }, 
+    "428": {
+        "definition": "power", 
+        "example": "le dio el poder de manejar la economía mundial ", 
+        "part": "noun — masculine", 
+        "word": "poder"
+    }, 
+    "429": {
+        "definition": "importance", 
+        "example": "¿qué proyectos de importancia tiene en su agenda? ", 
+        "part": "noun — feminine", 
+        "word": "importancia"
+    }, 
+    "430": {
+        "definition": "system", 
+        "example": "están situados a ", 
+        "part": "noun — masculine", 
+        "word": "sistema"
+    }, 
+    "431": {
+        "definition": "travel, trip", 
+        "example": "le suceden todo tipo de aventuras durante su viaje ", 
+        "part": "noun — masculine", 
+        "word": "viaje"
+    }, 
+    "432": {
+        "definition": "ground, floor", 
+        "example": "durmió en el suelo sobre varias mantas", 
+        "part": "noun — masculine", 
+        "word": "suelo"
+    }, 
+    "433": {
+        "definition": "respect, con respecto a: with regards to", 
+        "example": "los grupos varían con respecto al número que lo componen", 
+        "part": "noun — masculine", 
+        "word": "respecto"
+    }, 
+    "434": {
+        "definition": "knowledge", 
+        "example": "desplegó un conocimiento variado de los costumbres del país ", 
+        "part": "noun — masculine", 
+        "word": "conocimiento"
+    }, 
+    "435": {
+        "definition": "freedom, liberty", 
+        "example": "les falta la libertad, el hábito de pensar libremente ", 
+        "part": "noun — feminine", 
+        "word": "libertad"
+    }, 
+    "436": {
+        "definition": "above, on top, in addition", 
+        "example": "nos pueden elevar por encima de nuestra realidad ", 
+        "part": "adverb", 
+        "word": "encima"
+    }, 
+    "437": {
+        "definition": "to buy", 
+        "example": "me iba a comprar un televisor", 
+        "part": "verb", 
+        "word": "comprar"
+    }, 
+    "438": {
+        "definition": "common", 
+        "example": "el talento no es una cosa muy común", 
+        "part": "adjective", 
+        "word": "común"
+    }, 
+    "439": {
+        "definition": "open, unlocked ", 
+        "example": "dormía con un ojo abierto", 
+        "part": "adjective", 
+        "word": "abierto"
+    }, 
+    "440": {
+        "definition": "next", 
+        "example": "pasará el próximo semestre enseñando literatura ", 
+        "part": "adjective", 
+        "word": "próximo"
+    }, 
+    "441": {
+        "definition": "attention", 
+        "example": "llaman mucho la atención y causan un gran impacto ", 
+        "part": "noun — feminine", 
+        "word": "atención"
+    }, 
+    "442": {
+        "definition": "young", 
+        "example": "¿qué novedad le puede aportar una cantante joven como usted? ", 
+        "part": "adjective", 
+        "word": "joven"
+    }, 
+    "443": {
+        "definition": "to go up", 
+        "example": "el sistema de subir y bajar verticalmente", 
+        "part": "verb", 
+        "word": "subir"
+    }, 
+    "444": {
+        "definition": "effort, endeavor ", 
+        "example": "no ha sido vano su esfuerzo", 
+        "part": "noun — masculine", 
+        "word": "esfuerzo"
+    }, 
+    "445": {
+        "definition": "past, last", 
+        "example": "las cosechas serían buenas, pero no tanto como el año pasado ", 
+        "part": "adjective", 
+        "word": "pasado"
+    }, 
+    "446": {
+        "definition": "to avoid, prevent", 
+        "example": "actuó rápido para evitar su segura humillación ", 
+        "part": "verb", 
+        "word": "evitar"
+    }, 
+    "447": {
+        "definition": "rest, remainder, leftover", 
+        "example": "en el Perú y Japón sí, pero no en el resto del mundo ", 
+        "part": "noun — masculine", 
+        "word": "resto"
+    }, 
+    "448": {
+        "definition": "to interest", 
+        "example": "no le interesa conocer el mundo", 
+        "part": "verb", 
+        "word": "interesar"
+    }, 
+    "449": {
+        "definition": "area, zone", 
+        "example": "conquistó la zona alemana de Samoa en agosto de ", 
+        "part": "noun — feminine", 
+        "word": "zona"
+    }, 
+    "450": {
+        "definition": "fear", 
+        "example": "yo no tengo miedo de morir", 
+        "part": "noun — masculine", 
+        "word": "miedo"
+    }, 
+    "451": {
+        "definition": "out, outside, away", 
+        "example": "hace como diez años que está fuera del Paraguay ", 
+        "part": "adverb", 
+        "word": "fuera"
+    }, 
+    "452": {
+        "definition": "process, procedure", 
+        "example": "el proceso de gestación de la criatura no fue normal ", 
+        "part": "noun — masculine", 
+        "word": "proceso"
+    }, 
+    "453": {
+        "definition": "alive, bright", 
+        "example": "el país está musicalmente vivo y palpitante", 
+        "part": "adjective", 
+        "word": "vivo"
+    }, 
+    "454": {
+        "definition": "to close", 
+        "example": "lo mejor era cerrar los ojos y dormir", 
+        "part": "verb", 
+        "word": "cerrar"
+    }, 
+    "455": {
+        "definition": "to throw, cast", 
+        "example": "me echó de la casa y me fui", 
+        "part": "verb", 
+        "word": "echar"
+    }, 
+    "456": {
+        "definition": "to answer, respond", 
+        "example": "el Gobierno respondió por escrito a este diputado ", 
+        "part": "verb", 
+        "word": "responder"
+    }, 
+    "457": {
+        "definition": "to suffer, undergo", 
+        "example": "sufrió la eterna tragedia del grande", 
+        "part": "verb", 
+        "word": "sufrir"
+    }, 
+    "458": {
+        "definition": "complete", 
+        "example": "tienes mi apoyo completo", 
+        "part": "adjective", 
+        "word": "completo"
+    }, 
+    "459": {
+        "definition": "minute", 
+        "example": "antes del partido se va a guardar un minuto de silencio ", 
+        "part": "noun — masculine", 
+        "word": "minuto"
+    }, 
+    "460": {
+        "definition": "contrary, opposite", 
+        "example": "al principio nadie se alarmó; al contrario, se alegraron ", 
+        "part": "adjective", 
+        "word": "contrario"
+    }, 
+    "461": {
+        "definition": "table, board", 
+        "example": "la mesa estaba puesta para la cena", 
+        "part": "noun — feminine", 
+        "word": "mesa"
+    }, 
+    "462": {
+        "definition": "royal, real, authentic", 
+        "example": "fuimos a la biblioteca del palacio real de Madrid ", 
+        "part": "adjective", 
+        "word": "real"
+    }, 
+    "463": {
+        "definition": "opportunity, occasion", 
+        "example": "no se puede perder esta ocasión porque es la última ", 
+        "part": "noun — feminine", 
+        "word": "ocasión"
+    }, 
+    "464": {
+        "definition": "to matter, import ", 
+        "example": "no le importa nada de nada", 
+        "part": "verb", 
+        "word": "importar"
+    }, 
+    "465": {
+        "definition": "public", 
+        "example": "el ", 
+        "part": "adjective", 
+        "word": "público"
+    }, 
+    "466": {
+        "definition": "to obtain", 
+        "example": "se hace la guerra para obtener la paz", 
+        "part": "verb", 
+        "word": "obtener"
+    }, 
+    "467": {
+        "definition": "program, plan", 
+        "example": "van a aprender mucho de este programa escolar", 
+        "part": "noun — masculine", 
+        "word": "programa"
+    }, 
+    "468": {
+        "definition": "favor, benefit", 
+        "example": "están a favor de los serbios", 
+        "part": "noun — masculine", 
+        "word": "favor"
+    }, 
+    "469": {
+        "definition": "far (away, off)", 
+        "example": "ese sitio estaba lejos del pueblo", 
+        "part": "adverb", 
+        "word": "lejos"
+    }, 
+    "470": {
+        "definition": "seven", 
+        "example": "aprobó el cursillo “Cómo ser feliz en siete días”", 
+        "part": "number", 
+        "word": "siete"
+    }, 
+    "471": {
+        "definition": "enormous, vast", 
+        "example": "hay una enorme cantidad de cuadros muy significativos ", 
+        "part": "adjective", 
+        "word": "enorme"
+    }, 
+    "472": {
+        "definition": "answer, reply", 
+        "example": "la única respuesta fue el silencio", 
+        "part": "noun — feminine", 
+        "word": "respuesta"
+    }, 
+    "473": {
+        "definition": "line, course", 
+        "example": "la línea del horizonte que separa el cielo del mar", 
+        "part": "noun — feminine", 
+        "word": "línea"
+    }, 
+    "474": {
+        "definition": "space, room", 
+        "example": "ya no quedaba espacio para nadie alrededor del tranvía ", 
+        "part": "noun — masculine", 
+        "word": "espacio"
+    }, 
+    "475": {
+        "definition": "level", 
+        "example": "el nivel del mar empezaba a aumentar", 
+        "part": "noun — masculine", 
+        "word": "nivel"
+    }, 
+    "476": {
+        "definition": "government", 
+        "example": "el feudalismo fue la forma de gobierno", 
+        "part": "noun — masculine", 
+        "word": "gobierno"
+    }, 
+    "477": {
+        "definition": "end, bit; llevar a cabo: to carry out ", 
+        "example": "llevó a cabo un importante trabajo científico ", 
+        "part": "noun — masculine", 
+        "word": "cabo"
+    }, 
+    "478": {
+        "definition": "to observe", 
+        "example": "en los que se pueden observar bajo microscopio ", 
+        "part": "verb", 
+        "word": "observar"
+    }, 
+    "479": {
+        "definition": "to indicate", 
+        "example": "el Conductor le indica el lugar que debe ocupar ", 
+        "part": "verb", 
+        "word": "indicar"
+    }, 
+    "480": {
+        "definition": "somebody, someone, anyone", 
+        "example": "alguien vino a preguntar por usted ", 
+        "part": "pronoun", 
+        "word": "alguien"
+    }, 
+    "481": {
+        "definition": "question", 
+        "example": "cada pregunta abría un mar de respuestas", 
+        "part": "noun — feminine", 
+        "word": "pregunta"
+    }, 
+    "482": {
+        "definition": "of course, clearly", 
+        "example": "¡Claro! Así está mucho mejor", 
+        "part": "adverb", 
+        "word": "claro"
+    }, 
+    "483": {
+        "definition": "back, behind, ago", 
+        "example": "se olvidaba de mirar hacia atrás o hacia los lados ", 
+        "part": "adverb", 
+        "word": "atrás"
+    }, 
+    "484": {
+        "definition": "image, picture", 
+        "example": "es un intento evidente de dañar mi imagen pública ", 
+        "part": "noun — feminine", 
+        "word": "imagen"
+    }, 
+    "485": {
+        "definition": "career, course, race", 
+        "example": "su carrera como «jazzman» profesional empezó en Cannes ", 
+        "part": "noun — feminine", 
+        "word": "carrera"
+    }, 
+    "486": {
+        "definition": "to imagine", 
+        "example": "me imagino que Uds. tienen la misma situación ", 
+        "part": "verb", 
+        "word": "imaginar"
+    }, 
+    "487": {
+        "definition": "to be accustomed to", 
+        "example": "en las noches cálidas la familia suele reunirse en el patio ", 
+        "part": "verb", 
+        "word": "soler"
+    }, 
+    "488": {
+        "definition": "both", 
+        "example": "se extendían a ambos lados de la carretera", 
+        "part": "adjective", 
+        "word": "ambos"
+    }, 
+    "489": {
+        "definition": "deep, profound", 
+        "example": "el mejor y más profundo conocimiento del poeta ", 
+        "part": "adjective", 
+        "word": "profundo"
+    }, 
+    "490": {
+        "definition": "to stop, detain", 
+        "example": "su pupila se detenía sobre el papel", 
+        "part": "verb", 
+        "word": "detener"
+    }, 
+    "491": {
+        "definition": "to develop", 
+        "example": "tratando de desarrollar un . . . nuevo sistema electrónico ", 
+        "part": "verb", 
+        "word": "desarrollar"
+    }, 
+    "492": {
+        "definition": "eight", 
+        "example": "entre las siete y media, ocho de la mañana", 
+        "part": "number", 
+        "word": "ocho"
+    }, 
+    "493": {
+        "definition": "to point (out), signal", 
+        "example": "nos hizo señas y señaló hacia adelante", 
+        "part": "verb", 
+        "word": "señalar"
+    }, 
+    "494": {
+        "definition": "to choose, elect", 
+        "example": "los caminos son muchos y hay que elegir el mejor ", 
+        "part": "verb", 
+        "word": "elegir"
+    }, 
+    "495": {
+        "definition": "figure", 
+        "example": "descubrió en el ruidoso grupo la figura de su padre ", 
+        "part": "noun — feminine", 
+        "word": "figura"
+    }, 
+    "496": {
+        "definition": "main, principal ", 
+        "example": "¿cuál es el problema principal?", 
+        "part": "adjective", 
+        "word": "principal"
+    }, 
+    "497": {
+        "definition": "animal", 
+        "example": "¿es hombre, animal o cosa?", 
+        "part": "noun — masculine", 
+        "word": "animal"
+    }, 
+    "498": {
+        "definition": "base, basis", 
+        "example": "la mitología griega es la base de la literatura", 
+        "part": "noun — feminine", 
+        "word": "base"
+    }, 
+    "499": {
+        "definition": "to prepare", 
+        "example": "todos los ingredientes para preparar un plato notable ", 
+        "part": "verb", 
+        "word": "preparar"
+    }, 
+    "500": {
+        "definition": "to propose", 
+        "example": "le voy a proponer que nos casemos", 
+        "part": "verb", 
+        "word": "proponer"
+    }, 
+    "501": {
+        "definition": "to show, demonstrate ", 
+        "example": "todos me escuchaban inmóviles, sin demostrar la menor sorpresa ", 
+        "part": "verb", 
+        "word": "demostrar"
+    }, 
+    "502": {
+        "definition": "to mean", 
+        "example": "la paloma azul debía significar la libertad", 
+        "part": "verb", 
+        "word": "significar"
+    }, 
+    "503": {
+        "definition": "position", 
+        "example": "-Vi que mi posición en aquel momento era inútil ", 
+        "part": "noun — feminine", 
+        "word": "posición"
+    }, 
+    "504": {
+        "definition": "motive, cause", 
+        "example": "revelan el motivo de la construcción de las pirámides ", 
+        "part": "noun — masculine", 
+        "word": "motivo"
+    }, 
+    "505": {
+        "definition": "proof, trial, test", 
+        "example": "fue prueba de fidelidad y confianza conyugal", 
+        "part": "noun — feminine", 
+        "word": "prueba"
+    }, 
+    "506": {
+        "definition": "politics, policy", 
+        "example": "se lanzan a un frenético debate sobre política", 
+        "part": "noun — feminine", 
+        "word": "política"
+    }, 
+    "507": {
+        "definition": "national", 
+        "example": "le dieron el premio nacional de poesía", 
+        "part": "adjective", 
+        "word": "nacional"
+    }, 
+    "508": {
+        "definition": "full, filled", 
+        "example": "joven y lleno de esperanzas por una vida mejor ", 
+        "part": "adjective", 
+        "word": "lleno"
+    }, 
+    "509": {
+        "definition": "to gather, meet, collect", 
+        "example": "le permitieron reunir una fortuna de proporciones grotescas ", 
+        "part": "verb", 
+        "word": "reunir"
+    }, 
+    "510": {
+        "definition": "to be lacking", 
+        "example": "me falta una persona a quien comunicar mis impresiones ", 
+        "part": "verb", 
+        "word": "faltar"
+    }, 
+    "511": {
+        "definition": "supposed; por supuesto: of course", 
+        "example": "no entendí, por supuesto, nada, ni una palabra", 
+        "part": "adjective", 
+        "word": "supuesto"
+    }, 
+    "512": {
+        "definition": "to accompany", 
+        "example": "deberá acompañar a la novia a la iglesia", 
+        "part": "verb", 
+        "word": "acompañar"
+    }, 
+    "513": {
+        "definition": "data, fact", 
+        "example": "tenemos grandes bases de datos de secuencias de proteínas ", 
+        "part": "noun — masculine", 
+        "word": "dato"
+    }, 
+    "514": {
+        "definition": "easy", 
+        "example": "no es fácil explicar con precisión lo que sucedió ", 
+        "part": "adjective", 
+        "word": "fácil"
+    }, 
+    "515": {
+        "definition": "to want, desire, wish for ", 
+        "example": "dijo que deseaba venir a México", 
+        "part": "verb", 
+        "word": "desear"
+    }, 
+    "516": {
+        "definition": "forward, further", 
+        "example": "el gobierno sigue adelante con el proyecto ", 
+        "part": "adverb", 
+        "word": "adelante"
+    }, 
+    "517": {
+        "definition": "firm, company, venture", 
+        "example": "operaba con una empresa constructora del Reino Unido ", 
+        "part": "noun — feminine", 
+        "word": "empresa"
+    }, 
+    "518": {
+        "definition": "matter, issue, affair", 
+        "example": "se ha creado una gran polémica sobre el asunto ", 
+        "part": "noun — masculine", 
+        "word": "asunto"
+    }, 
+    "519": {
+        "definition": "presence, appearance", 
+        "example": "un ruido que advirtió a los ladrones de su presencia en la casa ", 
+        "part": "noun — feminine", 
+        "word": "presencia"
+    }, 
+    "520": {
+        "definition": "his, hers, yours (formal), theirs", 
+        "example": "señor, lo que es mío, es suyo ", 
+        "part": "pronoun", 
+        "word": "suyo"
+    }, 
+    "521": {
+        "definition": "culture", 
+        "example": "fue una primitiva cultura indoeuropea", 
+        "part": "noun — feminine", 
+        "word": "cultura"
+    }, 
+    "522": {
+        "definition": "series", 
+        "example": "en la combustión intervienen una serie de factores ", 
+        "part": "noun — feminine", 
+        "word": "serie"
+    }, 
+    "523": {
+        "definition": "million, fortune", 
+        "example": "le ha proporcionado un cheque de un millón de pesetas ", 
+        "part": "number", 
+        "word": "millón"
+    }, 
+    "524": {
+        "definition": "to teach, show", 
+        "example": "¿qué objeto tiene enseñar química en Secundaria? ", 
+        "part": "verb", 
+        "word": "enseñar"
+    }, 
+    "525": {
+        "definition": "to construct, build", 
+        "example": "la robótica tiende a construir modelos diminutos ", 
+        "part": "verb", 
+        "word": "construir"
+    }, 
+    "526": {
+        "definition": "to sell", 
+        "example": "tuvieron que vender el maíz para comprar el lienzo ", 
+        "part": "verb", 
+        "word": "vender"
+    }, 
+    "527": {
+        "definition": "to represent", 
+        "example": "representa uno de los aspectos más desconocidos ", 
+        "part": "verb", 
+        "word": "representar"
+    }, 
+    "528": {
+        "definition": "to disappear, vanish ", 
+        "example": "se hizo desaparecer en la oscuridad", 
+        "part": "verb", 
+        "word": "desaparecer"
+    }, 
+    "529": {
+        "definition": "to send, order", 
+        "example": "la primera carta que Rita nos mandó de Francia ", 
+        "part": "verb", 
+        "word": "mandar"
+    }, 
+    "530": {
+        "definition": "personality, nature", 
+        "example": "es un hombre de carácter apacible, reflexivo y afectuoso ", 
+        "part": "noun — masculine", 
+        "word": "carácter"
+    }, 
+    "531": {
+        "definition": "majority", 
+        "example": "la mayoría de los cánceres humanos no tienen un origen vírico ", 
+        "part": "noun — feminine", 
+        "word": "mayoría"
+    }, 
+    "532": {
+        "definition": "school", 
+        "example": "dicta clases en la Escuela de Medicina de esa Universidad ", 
+        "part": "noun — feminine", 
+        "word": "escuela"
+    }, 
+    "533": {
+        "definition": "red", 
+        "example": "su boca, muy roja, apenas se movió", 
+        "part": "adjective", 
+        "word": "rojo"
+    }, 
+    "534": {
+        "definition": "after, behind", 
+        "example": "A. había retornado a su tierra tras años de lucha ", 
+        "part": "preposition", 
+        "word": "tras"
+    }, 
+    "535": {
+        "definition": "superior, upper", 
+        "example": "una cantidad de dinero superior a su sueldo anual ", 
+        "part": "adjective", 
+        "word": "superior"
+    }, 
+    "536": {
+        "definition": "to walk, function", 
+        "example": "casi nadie andaba por las calles", 
+        "part": "verb", 
+        "word": "andar"
+    }, 
+    "537": {
+        "definition": "short, brief", 
+        "example": "su único día libre, era el día más corto de la semana ", 
+        "part": "adjective", 
+        "word": "corto"
+    }, 
+    "538": {
+        "definition": "writer, author", 
+        "example": "cuando un autor escribe un mal libro, se cierra o se tira a la papelera ", 
+        "part": "noun —  masc/fem (masc form given)", 
+        "word": "autor"
+    }, 
+    "539": {
+        "definition": "brother, [plural] siblings", 
+        "example": "éramos tres hermanos, dos hermanos mayores y yo ", 
+        "part": "noun — masculine", 
+        "word": "hermano"
+    }, 
+    "540": {
+        "definition": "known, well-known", 
+        "example": "Velázquez fue también un pintor muy conocido en Sevilla ", 
+        "part": "adjective", 
+        "word": "conocido"
+    }, 
+    "541": {
+        "definition": "to prefer", 
+        "example": "en realidad prefiero una buena hamburguesa con una coca cola ", 
+        "part": "verb", 
+        "word": "preferir"
+    }, 
+    "542": {
+        "definition": "to assure, secure, insure", 
+        "example": "podía asegurar que él sería la próxima víctima ", 
+        "part": "verb", 
+        "word": "asegurar"
+    }, 
+    "543": {
+        "definition": "function, meeting", 
+        "example": "¿qué función tienen las Academias en este sentido? ", 
+        "part": "noun — feminine", 
+        "word": "función"
+    }, 
+    "544": {
+        "definition": "up, above", 
+        "example": "desde arriba yo veía a mis dos hijas", 
+        "part": "adverb", 
+        "word": "arriba"
+    }, 
+    "545": {
+        "definition": "serious", 
+        "example": "esa muchacha tiene un problema serio", 
+        "part": "adjective", 
+        "word": "serio"
+    }, 
+    "546": {
+        "definition": "cause", 
+        "example": "la barrera puede romperse a intervalos por causa de las mareas ", 
+        "part": "noun — feminine", 
+        "word": "causa"
+    }, 
+    "547": {
+        "definition": "sufficient, enough", 
+        "example": "no tuvo el tiempo suficiente para ejecutar sus proyectos ", 
+        "part": "adjective", 
+        "word": "suficiente"
+    }, 
+    "548": {
+        "definition": "serious, solemn", 
+        "example": "hay momentos de crisis grave en el mundo", 
+        "part": "adjective", 
+        "word": "grave"
+    }, 
+    "549": {
+        "definition": "decision", 
+        "example": "es difícil tomar una decisión como ésta", 
+        "part": "noun — feminine", 
+        "word": "decisión"
+    }, 
+    "550": {
+        "definition": "music", 
+        "example": "la gente se detenía siempre a escuchar la música que tocaban ", 
+        "part": "noun — feminine", 
+        "word": "música"
+    }, 
+    "551": {
+        "definition": "strange, foreign", 
+        "example": "tenían un extraño color de azúcar quemada ", 
+        "part": "adjective", 
+        "word": "extraño"
+    }, 
+    "552": {
+        "definition": "to grow, increase", 
+        "example": "nació y creció el muchacho en La Huerta", 
+        "part": "verb", 
+        "word": "crecer"
+    }, 
+    "553": {
+        "definition": "to appear, spring (forth) ", 
+        "example": "veía surgir la sombra terrible", 
+        "part": "verb", 
+        "word": "surgir"
+    }, 
+    "554": {
+        "definition": "you (subject-singular/familiar)", 
+        "example": "¡qué clase de hombre eres tú!", 
+        "part": "pronoun", 
+        "word": "tú"
+    }, 
+    "555": {
+        "definition": "expression", 
+        "example": "Johnny cambió su sonrisa por una expresión concentrada ", 
+        "part": "noun — feminine", 
+        "word": "expresión"
+    }, 
+    "556": {
+        "definition": "about, around, round ", 
+        "example": "entraron alrededor de las ocho de la mañana ", 
+        "part": "adverb", 
+        "word": "alrededor"
+    }, 
+    "557": {
+        "definition": "to kill", 
+        "example": "el gato sirve para matar a los ratones", 
+        "part": "verb", 
+        "word": "matar"
+    }, 
+    "558": {
+        "definition": "to deliver", 
+        "example": "entregó el paquete a las criaturas", 
+        "part": "verb", 
+        "word": "entregar"
+    }, 
+    "559": {
+        "definition": "river", 
+        "example": "recorriendo el río Amazonas y atravesando los Andes ", 
+        "part": "noun — masculine", 
+        "word": "río"
+    }, 
+    "560": {
+        "definition": "security, safety", 
+        "example": "unas dudas sobre la calidad y seguridad de los medicamentos ", 
+        "part": "noun — feminine", 
+        "word": "seguridad"
+    }, 
+    "561": {
+        "definition": "term (language), end", 
+        "example": "se centra en el significado literal del término descrito ", 
+        "part": "noun — masculine", 
+        "word": "término"
+    }, 
+    "562": {
+        "definition": "to place, position", 
+        "example": "vuelve a colocar las rosas dentro del jarrón", 
+        "part": "verb", 
+        "word": "colocar"
+    }
+}

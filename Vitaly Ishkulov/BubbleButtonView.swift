@@ -11,6 +11,12 @@ import UIKit
 class BubbleButtonView: UIButton {
     
     private var color = UIColor.clearColor()
+    var colorHex: String? {
+        willSet {
+            self.color = colorWithHexString(newValue!)
+            self.setNeedsDisplay()
+        }
+    }
     
     func colorWithHexString (hex:String) -> UIColor {
         var cString:String = hex.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet() as NSCharacterSet).uppercaseString
@@ -33,15 +39,6 @@ class BubbleButtonView: UIButton {
             blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
             alpha: CGFloat(1.0)
         )
-    }
-    
-    init(frame: CGRect, colorHex: String) {
-        super.init(frame: frame)
-        color = colorWithHexString(colorHex)
-    }
-    
-    required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     override func drawRect(rect: CGRect) {

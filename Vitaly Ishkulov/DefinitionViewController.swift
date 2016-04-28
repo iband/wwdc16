@@ -9,6 +9,7 @@
 import UIKit
 
 class DefinitionViewController: UIViewController, UIGestureRecognizerDelegate {
+    var delegate: StoredWordsDataSource?
     
     @IBOutlet weak var word: UILabel!
     @IBOutlet weak var partOfSpeech: UILabel!
@@ -50,10 +51,66 @@ class DefinitionViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        print("layout:\t\(exampleBackground.frame)")
         self.preferredContentSize = CGSize(width: 0, height: self.exampleBackground.frame.origin.y + self.exampleBackground.frame.size.height + 10)
     }
     
+    private func addWordWithId(id: Int, guessed: Bool) {
+        if delegate != nil {
+            delegate!.guessedWords[self.buttonId!] = guessed
+            //
+            print(delegate!.guessedWords)
+            delegate!.updateButtonColors()
+        }
+    }
+    @IBAction func correct() {
+        addWordWithId(self.buttonId!, guessed: true)
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    @IBAction func incorrect() {
+        addWordWithId(self.buttonId!, guessed: false)
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
+    // Preview action items.
+    override func previewActionItems() -> [UIPreviewActionItem] {
+        
+        let correctAction = UIPreviewAction(title: "I knew the word", style: .Default) { (action, viewController) -> Void in
+            guard let definitionVC = viewController as? DefinitionViewController else { return }
+            definitionVC.correct()
+        }
+        
+        let incorrectAction = UIPreviewAction(title: "I didn't know", style: .Destructive) { (action, viewController) -> Void in
+            guard let definitionVC = viewController as? DefinitionViewController else { return }
+            definitionVC.incorrect()
+        }
+        
+        return [correctAction, incorrectAction]
+        
+    }
+    
+//    lazy var previewActions: [UIPreviewActionItem] = {
+//        func previewActionForTitle(title: String, style: UIPreviewActionStyle = .Destructive) -> UIPreviewAction {
+//            return UIPreviewAction(title: title, style: style) { previewAction, viewController in
+//                guard let definitionVC = viewController as? DefinitionViewController else { return }
+//                
+//                switch title {
+//                case "I knew the word":
+//                    definitionVC.correct()
+//                case "I didn't know":
+//                    definitionVC.incorrect()
+//                default:
+//                    break
+//                }
+//            }
+//        }
+//        
+//        let action1 = previewActionForTitle("I knew the word")
+//        let action2 = previewActionForTitle("I didn't know", style: UIPreviewActionStyle.Destructive)
+//        
+//        return [action1, action2]
+//    }()
+    
+    //TODO: remove pan gesture recogniser
     func pan(a: Int) {
         print("Pan GR")
     }
