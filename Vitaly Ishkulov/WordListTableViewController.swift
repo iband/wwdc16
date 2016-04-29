@@ -39,15 +39,12 @@ class WordListTableViewController: UITableViewController, NSFetchedResultsContro
         }
         
         // Uncomment the following line to preserve selection between presentations
-         self.clearsSelectionOnViewWillAppear = true
+        self.clearsSelectionOnViewWillAppear = true
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-         self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        tableView.tableFooterView = UIView(frame:CGRectZero)
     }
 
     // MARK: - Table view data source
@@ -79,8 +76,12 @@ class WordListTableViewController: UITableViewController, NSFetchedResultsContro
         let record = fetchedResultsController.objectAtIndexPath(indexPath)
         
         // Update Cell
-        guard let word = record.valueForKey("word") as? String, id = record.valueForKey("wordId") as? Int else { return }
+        guard let word = record.valueForKey("word") as? String,
+            id = record.valueForKey("wordId") as? Int,
+            definition = record.valueForKey("definition") as? String
+            else { return }
         cell.textLabel?.text = word
+        cell.detailTextLabel?.text = definition
         cell.tag = id
     }
     
