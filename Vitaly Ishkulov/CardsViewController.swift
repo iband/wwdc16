@@ -94,6 +94,9 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
         
         buttonsSetUp()
         cardsScrollView.buttons = buttons
+        
+        let shortcut = UIApplicationShortcutItem(type: "com.iva-soft.Vitaly-Ishkulov.show-words", localizedTitle: "Show Words", localizedSubtitle: "Your previously guessed cards", icon: UIApplicationShortcutIcon(type: UIApplicationShortcutIconType.Message), userInfo: nil)
+        UIApplication.sharedApplication().shortcutItems = [shortcut]
     }
     
     func showDetailsView(sender: UIButton) {
