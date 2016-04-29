@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA4559ED1CD2A61600BBF84F /* WordListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4559EC1CD2A61600BBF84F /* WordListTableViewController.swift */; };
 		AA641DE51CCE15B300304B86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DE41CCE15B300304B86 /* AppDelegate.swift */; };
 		AA641DE71CCE15B300304B86 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DE61CCE15B300304B86 /* CardsViewController.swift */; };
 		AA641DEC1CCE15B300304B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA641DEA1CCE15B300304B86 /* Main.storyboard */; };
@@ -16,10 +17,12 @@
 		AA641DFC1CCE6C9D00304B86 /* BubbleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DFB1CCE6C9D00304B86 /* BubbleButtonView.swift */; };
 		AA641E061CCFD82F00304B86 /* DictionaryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641E051CCFD82F00304B86 /* DictionaryBrain.swift */; };
 		AA641E0C1CD1058C00304B86 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641E0B1CD1058C00304B86 /* DefinitionViewController.swift */; };
+		AAB0FFCB1CD3734F00BDBCA7 /* SavedWords.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAB0FFC91CD3734F00BDBCA7 /* SavedWords.xcdatamodeld */; };
 		AABF9E751CD2064400D6E218 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = AABF9E741CD2064400D6E218 /* dictionary.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA4559EC1CD2A61600BBF84F /* WordListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordListTableViewController.swift; sourceTree = "<group>"; };
 		AA641DE11CCE15B300304B86 /* Vitaly Ishkulov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vitaly Ishkulov.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA641DE41CCE15B300304B86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA641DE61CCE15B300304B86 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 		AA641DFB1CCE6C9D00304B86 /* BubbleButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleButtonView.swift; sourceTree = "<group>"; };
 		AA641E051CCFD82F00304B86 /* DictionaryBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryBrain.swift; sourceTree = "<group>"; };
 		AA641E0B1CD1058C00304B86 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		AAB0FFCA1CD3734F00BDBCA7 /* SavedWords.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SavedWords.xcdatamodel; sourceTree = "<group>"; };
 		AABF9E741CD2064400D6E218 /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dictionary.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +68,7 @@
 		AA641DE31CCE15B300304B86 /* Vitaly Ishkulov */ = {
 			isa = PBXGroup;
 			children = (
+				AA4559EC1CD2A61600BBF84F /* WordListTableViewController.swift */,
 				AA641E0B1CD1058C00304B86 /* DefinitionViewController.swift */,
 				AA641E051CCFD82F00304B86 /* DictionaryBrain.swift */,
 				AA641DE61CCE15B300304B86 /* CardsViewController.swift */,
@@ -79,6 +84,7 @@
 		AA641DF81CCE5D0B00304B86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AAB0FFC91CD3734F00BDBCA7 /* SavedWords.xcdatamodeld */,
 				AABF9E741CD2064400D6E218 /* dictionary.json */,
 				AA641DE41CCE15B300304B86 /* AppDelegate.swift */,
 				AA641DEF1CCE15B300304B86 /* LaunchScreen.storyboard */,
@@ -160,6 +166,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA4559ED1CD2A61600BBF84F /* WordListTableViewController.swift in Sources */,
+				AAB0FFCB1CD3734F00BDBCA7 /* SavedWords.xcdatamodeld in Sources */,
 				AA641DE51CCE15B300304B86 /* AppDelegate.swift in Sources */,
 				AA641E0C1CD1058C00304B86 /* DefinitionViewController.swift in Sources */,
 				AA641DE71CCE15B300304B86 /* CardsViewController.swift in Sources */,
@@ -320,6 +328,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AAB0FFC91CD3734F00BDBCA7 /* SavedWords.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AAB0FFCA1CD3734F00BDBCA7 /* SavedWords.xcdatamodel */,
+			);
+			currentVersion = AAB0FFCA1CD3734F00BDBCA7 /* SavedWords.xcdatamodel */;
+			path = SavedWords.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AA641DD91CCE15B300304B86 /* Project object */;
 }

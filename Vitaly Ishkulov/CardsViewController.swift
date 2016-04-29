@@ -23,16 +23,18 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
     private let circleRadius: CGFloat = 50
     private var globalButtonId = 0
     
-    private let defaultCircleColor = "#D9D9D9"
-    private let learnedCircleColor = "#BAFFBC"
-    private let failedCircleColor = "#FFCABA"
+    private let defaultCircleColor = "#E3E3E3"
+    private let learnedCircleColor = "#A2DB68" //"#C9F0A1" //"#BAFFBC"
+    private let failedCircleColor = "#FF7666" //"#FFA69B" //"#FFCABA"
     
     var guessedWords: [Int : Bool] = [:]
+    var savedWords: [Int] = []
     
     func updateButtonColors() {
         for button in buttons {
             let id = button.tag
             if guessedWords[id] != nil {
+                button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
                 button.colorHex = getColorForButtonId(id)
             }
         }
@@ -54,6 +56,7 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
         super.viewDidLoad()
         
         self.navigationController!.view.backgroundColor = UIColor.whiteColor()
+        self.title = "Words"
         
         globalButtonId = Int(arc4random()) % totalWordsCount // start with different words on launch
         
@@ -102,7 +105,6 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
         var buttonId = 0
         
         for center in circleCenters {
-//            buttonId += 1
             buttonId = globalButtonId % (totalWordsCount - 1) + 1 // show different words on refresh
             
             //data from the dictionary
@@ -113,7 +115,6 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
             let button = BubbleButtonView(frame: frame)
             button.colorHex = getColorForButtonId(buttonId)
 
-            
             button.setTitle(word, forState: .Normal)
             button.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
             button.titleLabel?.adjustsFontSizeToFitWidth = true

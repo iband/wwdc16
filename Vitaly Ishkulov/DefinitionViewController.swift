@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import CoreData
 
 class DefinitionViewController: UIViewController, UIGestureRecognizerDelegate {
+    var managedObjectContext: NSManagedObjectContext!
+// delete this delegate:
     var delegate: StoredWordsDataSource?
+    var dictionaryBrain = DictionaryBrain()
+    
+    var words = [NSManagedObject]()
     
     @IBOutlet weak var word: UILabel!
     @IBOutlet weak var partOfSpeech: UILabel!
@@ -34,8 +40,7 @@ class DefinitionViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         self.tabBarController?.tabBar.hidden = true
         super.viewDidLoad()
-        
-        let dictionaryBrain = DictionaryBrain()
+        self.title = "Definition"
         if let element = dictionaryBrain.getElementWithNumber(buttonId!) {
             word.text = element[DictionaryBrain.WordCardField.Word]
             definition.text = element[DictionaryBrain.WordCardField.Definition]
@@ -51,14 +56,15 @@ class DefinitionViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        self.preferredContentSize = CGSize(width: 0, height: self.exampleBackground.frame.origin.y + self.exampleBackground.frame.size.height + 10)
+        self.preferredContentSize = CGSize(width: 0, height: self.exampleBackground.frame.origin.y + self.exampleBackground.frame.size.height + 20)
     }
     
     private func addWordWithId(id: Int, guessed: Bool) {
         if delegate != nil {
             delegate!.guessedWords[self.buttonId!] = guessed
-            //
-            print(delegate!.guessedWords)
+            saveWord(self.buttonId!)
+            
+//            print(delegate!.guessedWords)
             delegate!.updateButtonColors()
         }
     }
@@ -86,6 +92,48 @@ class DefinitionViewController: UIViewController, UIGestureRecognizerDelegate {
         
         return [correctAction, incorrectAction]
         
+    }
+    
+    // saving to CoreData
+    func saveWord(wordId: Int) {
+        
+        
+        
+        guard let newWord = dictionaryBrain.getElementWithNumber(wordId) else { return }
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        
+//        let fetchRequest = NSFetchRequest(entityName: "Word")
+//        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+//        
+//        do {
+//            try appDelegate.persistentStoreCoordinator.executeRequest(deleteRequest, withContext: managedContext)
+//        } catch _ as NSError {
+//            // TODO: handle the error
+//        }
+        
+        let entity =  NSEntityDescription.entityForName("Word", inManagedObjectContext: managedContext)
+        let word = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+        
+        let fetch = NSFetchRequest(entityName: "Word")
+        let numberOfStoredWords = managedContext.countForFetchRequest(fetch, error: nil)
+        print(numberOfStoredWords)
+        word.setValue(numberOfStoredWords, forKey: "id")
+        word.setValue(wordId, forKey: "wordId")
+        word.setValue(newWord[DictionaryBrain.WordCardField.Word], forKey: "word")
+        word.setValue(newWord[DictionaryBrain.WordCardField.PartOfSpeech], forKey: "partOfSpeech")
+        word.setValue(newWord[DictionaryBrain.WordCardField.Definition], forKey: "definition")
+        
+        //4
+        do {
+            try managedContext.save()
+            //5
+            words.append(word)
+            print(words)
+            print(words[0].valueForKey("word"))
+        } catch let error as NSError  {
+            print("Could not save \(error), \(error.userInfo)")
+        }
     }
     
 //    lazy var previewActions: [UIPreviewActionItem] = {
