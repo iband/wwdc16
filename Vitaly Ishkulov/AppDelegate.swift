@@ -16,36 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-//        let mainController = self.window?.rootViewController as? UITabBarController
-//        for controller in (mainController?.viewControllers)! {
-//            if controller.restorationIdentifier == "StoryboardIDWordListNavigationController" {
-//                let viewController = (controller as? UINavigationController)?.topViewController as? WordListTableViewController
-//                
-//                if let viewController = viewController {
-//                    viewController.managedObjectContext = self.managedObjectContext
-//                }
-//            }
-//        }
-        
-        // Override point for customization after application launch.
-        // Fetch Main Storyboard
-//        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        
-//        // Instantiate Root TabBar Controller
-//        let rootTabBarController = mainStoryboard.instantiateViewControllerWithIdentifier("TabBarController") as! UITabBarController
-//        // Instantiate Root Navigation Controller
-//        let navigationController = mainStoryboard.instantiateViewControllerWithIdentifier("StoryboardIDWordListNavigationController") as! UINavigationController
-//        // Configure View Controller
-//        let viewController = navigationController.topViewController as? WordListTableViewController
-//        
-//        if let viewController = viewController {
-//            viewController.managedObjectContext = self.managedObjectContext
-//        }
-//        
-//        // Configure Window
-//        rootTabBarController.addChildViewController(navigationController)
-//        window?.rootViewController = rootTabBarController
         return true
     }
 

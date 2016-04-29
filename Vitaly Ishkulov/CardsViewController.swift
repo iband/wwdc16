@@ -223,8 +223,6 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
         {
             if let destinationVC = segue.destinationViewController as? DefinitionViewController {
                 destinationVC.buttonId = sender?.tag
-//                destinationVC.isPeeking = false
-//                destinationVC.delegate = self
             }
         }
     }
@@ -233,7 +231,6 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
         guard let definitionVC = storyboard?.instantiateViewControllerWithIdentifier("DefinitionViewController") as? DefinitionViewController else { return nil }
         
         let currentButtonView = previewingContext.sourceView
-//        definitionVC.delegate = self
         definitionVC.buttonId = currentButtonView.tag
         definitionVC.isPeeking = true
         return definitionVC
@@ -251,8 +248,6 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
     }
     
     func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
-        print(guessedWords)
-        print(anObject)
         switch (type) {
         case .Insert:
             guard let wordId = anObject.valueForKey("wordId") as? Int, guessed = anObject.valueForKey("guessed") as? Bool else { break }
