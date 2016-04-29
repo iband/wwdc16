@@ -11,11 +11,7 @@ import CoreData
 
 class DefinitionViewController: UIViewController, UIGestureRecognizerDelegate {
     var managedObjectContext: NSManagedObjectContext!
-// delete this delegate:
-    var delegate: StoredWordsDataSource?
     var dictionaryBrain = DictionaryBrain()
-    
-    var words = [NSManagedObject]()
     
     @IBOutlet weak var word: UILabel!
     @IBOutlet weak var partOfSpeech: UILabel!
@@ -39,6 +35,8 @@ class DefinitionViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewDidLoad() {
         self.tabBarController?.tabBar.hidden = true
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        managedObjectContext = appDelegate.managedObjectContext
         super.viewDidLoad()
         self.title = "Definition"
         if let element = dictionaryBrain.getElementWithNumber(buttonId!) {
@@ -58,22 +56,12 @@ class DefinitionViewController: UIViewController, UIGestureRecognizerDelegate {
         super.viewWillLayoutSubviews()
         self.preferredContentSize = CGSize(width: 0, height: self.exampleBackground.frame.origin.y + self.exampleBackground.frame.size.height + 20)
     }
-    
-    private func addWordWithId(id: Int, guessed: Bool) {
-        if delegate != nil {
-            delegate!.guessedWords[self.buttonId!] = guessed
-            saveWord(self.buttonId!)
-            
-//            print(delegate!.guessedWords)
-            delegate!.updateButtonColors()
-        }
-    }
     @IBAction func correct() {
-        addWordWithId(self.buttonId!, guessed: true)
+        saveWord(self.buttonId!, guessed: true)
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
     @IBAction func incorrect() {
-        addWordWithId(self.buttonId!, guessed: false)
+        saveWord(self.buttonId!, guessed: false)
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
@@ -95,71 +83,41 @@ class DefinitionViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     // saving to CoreData
-    func saveWord(wordId: Int) {
-        
-        
-        
-        guard let newWord = dictionaryBrain.getElementWithNumber(wordId) else { return }
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let managedContext = appDelegate.managedObjectContext
-        
-//        let fetchRequest = NSFetchRequest(entityName: "Word")
-//        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
-//        
-//        do {
-//            try appDelegate.persistentStoreCoordinator.executeRequest(deleteRequest, withContext: managedContext)
-//        } catch _ as NSError {
-//            // TODO: handle the error
-//        }
-        
-        let entity =  NSEntityDescription.entityForName("Word", inManagedObjectContext: managedContext)
-        let word = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
-        
-        let fetch = NSFetchRequest(entityName: "Word")
-        let numberOfStoredWords = managedContext.countForFetchRequest(fetch, error: nil)
-        print(numberOfStoredWords)
-        word.setValue(numberOfStoredWords, forKey: "id")
-        word.setValue(wordId, forKey: "wordId")
-        word.setValue(newWord[DictionaryBrain.WordCardField.Word], forKey: "word")
-        word.setValue(newWord[DictionaryBrain.WordCardField.PartOfSpeech], forKey: "partOfSpeech")
-        word.setValue(newWord[DictionaryBrain.WordCardField.Definition], forKey: "definition")
-        
-        //4
+    private func objectExists(wordId: Int, guessed: Bool, fetch: NSFetchRequest) -> Bool {
         do {
-            try managedContext.save()
-            //5
-            words.append(word)
-            print(words)
-            print(words[0].valueForKey("word"))
+            let storedWords = try managedObjectContext.executeFetchRequest(fetch)
+
+            for object in storedWords {
+                let id = object.valueForKey("wordId") as! Int
+                if id == wordId {
+                    object.setValue(guessed, forKey: "guessed")
+                    return true
+                }
+            }
+        } catch {}
+        return false
+    }
+    
+    private func saveWord(wordId: Int, guessed: Bool) {
+        
+        let entity =  NSEntityDescription.entityForName("Word", inManagedObjectContext: managedObjectContext)
+        let fetch = NSFetchRequest(entityName: "Word")
+        
+        if !objectExists(wordId, guessed: guessed, fetch: fetch) {
+            guard let newWord = dictionaryBrain.getElementWithNumber(wordId) else { return }
+            let word = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedObjectContext)
+            word.setValue(NSDate(), forKey: "addedAt")
+            word.setValue(wordId, forKey: "wordId")
+            word.setValue(newWord[DictionaryBrain.WordCardField.Word], forKey: "word")
+            word.setValue(newWord[DictionaryBrain.WordCardField.PartOfSpeech], forKey: "partOfSpeech")
+            word.setValue(newWord[DictionaryBrain.WordCardField.Definition], forKey: "definition")
+            word.setValue(guessed, forKey: "guessed")
+        }
+        
+        do {
+            try managedObjectContext.save()
         } catch let error as NSError  {
             print("Could not save \(error), \(error.userInfo)")
         }
-    }
-    
-//    lazy var previewActions: [UIPreviewActionItem] = {
-//        func previewActionForTitle(title: String, style: UIPreviewActionStyle = .Destructive) -> UIPreviewAction {
-//            return UIPreviewAction(title: title, style: style) { previewAction, viewController in
-//                guard let definitionVC = viewController as? DefinitionViewController else { return }
-//                
-//                switch title {
-//                case "I knew the word":
-//                    definitionVC.correct()
-//                case "I didn't know":
-//                    definitionVC.incorrect()
-//                default:
-//                    break
-//                }
-//            }
-//        }
-//        
-//        let action1 = previewActionForTitle("I knew the word")
-//        let action2 = previewActionForTitle("I didn't know", style: UIPreviewActionStyle.Destructive)
-//        
-//        return [action1, action2]
-//    }()
-    
-    //TODO: remove pan gesture recogniser
-    func pan(a: Int) {
-        print("Pan GR")
     }
 }

@@ -12,26 +12,21 @@ import CoreData
 class WordListTableViewController: UITableViewController, NSFetchedResultsControllerDelegate, UIViewControllerPreviewingDelegate {
     var managedObjectContext: NSManagedObjectContext!
     lazy var fetchedResultsController: NSFetchedResultsController = {
-        // Initialize Fetch Request
         let fetchRequest = NSFetchRequest(entityName: "Word")
         
-        // Add Sort Descriptors
-        let sortDescriptor = NSSortDescriptor(key: "id", ascending: true)
+        let sortDescriptor = NSSortDescriptor(key: "addedAt", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
         
-        // Initialize Fetched Results Controller
         let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
         
-        // Configure Fetched Results Controller
         fetchedResultsController.delegate = self
         
         return fetchedResultsController
     }()
-//    var words = [NSManagedObject]()
-//    private var dictionaryBrain = DictionaryBrain()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController!.view.backgroundColor = UIColor.whiteColor()
         self.title = "Word List"
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         managedObjectContext = appDelegate.managedObjectContext
@@ -43,10 +38,10 @@ class WordListTableViewController: UITableViewController, NSFetchedResultsContro
             print("\(fetchError), \(fetchError.userInfo)")
         }
         
-        print(managedObjectContext)
+//        print(managedObjectContext)
         
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+//         self.clearsSelectionOnViewWillAppear = true
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
          self.navigationItem.rightBarButtonItem = self.editButtonItem()
@@ -80,19 +75,18 @@ class WordListTableViewController: UITableViewController, NSFetchedResultsContro
 //        let word = words[indexPath.row]
 //        cell.textLabel!.text = word.valueForKey("word") as? String
         configureCell(cell, atIndexPath: indexPath)
-        
+        registerForPreviewingWithDelegate(self, sourceView: cell)
         return cell
     }
  
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         // Fetch Record
-        print(indexPath)
         let record = fetchedResultsController.objectAtIndexPath(indexPath)
         
         // Update Cell
-        if let word = record.valueForKey("word") as? String {
-            cell.textLabel?.text = word
-        }
+        guard let word = record.valueForKey("word") as? String, id = record.valueForKey("wordId") as? Int else { return }
+        cell.textLabel?.text = word
+        cell.tag = id
     }
     /*
     // Override to support conditional editing of the table view.
@@ -104,15 +98,16 @@ class WordListTableViewController: UITableViewController, NSFetchedResultsContro
 
     
     // Override to support editing the table view.
-//    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-//        if editingStyle == .Delete {
-//            // Delete the row from the data source
-//            print(indexPath)
-//            self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
-//        } else if editingStyle == .Insert {
-//            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-//        }    
-//    }
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            // Delete the row from the data source
+            print(indexPath)
+            let record = fetchedResultsController.objectAtIndexPath(indexPath)
+            managedObjectContext.deleteObject(record as! NSManagedObject)
+        } else if editingStyle == .Insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }
+    }
     
 
     /*
@@ -135,14 +130,16 @@ class WordListTableViewController: UITableViewController, NSFetchedResultsContro
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
+        if let definitionVC = segue.destinationViewController as? DefinitionViewController {
+            definitionVC.buttonId = (sender as! UITableViewCell).tag
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
     
-    func navigationController(navigationController: UINavigationController, didShowViewController viewController: UIViewController, animated: Bool) {
-        self.tableView.reloadData()
-    }
+//    func navigationController(navigationController: UINavigationController, didShowViewController viewController: UIViewController, animated: Bool) {
+//        self.tableView.reloadData()
+//    }
     
     func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
         guard let definitionVC = storyboard?.instantiateViewControllerWithIdentifier("DefinitionViewController") as? DefinitionViewController else { return nil }
@@ -174,7 +171,11 @@ class WordListTableViewController: UITableViewController, NSFetchedResultsContro
         switch (type) {
         case .Insert:
             if let indexPath = newIndexPath {
+                print(indexPath)
                 tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+//                let path = NSIndexPath(forRow: (self.fetchedResultsController.fetchedObjects?.count)! - 1, inSection: 0)
+//                print(path)
+//                tableView.insertRowsAtIndexPaths([path], withRowAnimation: .Fade)
             }
             break
         case .Delete:

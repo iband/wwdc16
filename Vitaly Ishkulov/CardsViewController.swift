@@ -7,13 +7,9 @@
 //
 
 import UIKit
+import CoreData
 
-protocol StoredWordsDataSource {
-    var guessedWords: [Int : Bool] { get set }
-    func updateButtonColors()
-}
-
-class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate, StoredWordsDataSource {
+class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate, NSFetchedResultsControllerDelegate {
 
     @IBOutlet weak var cardsScrollView: CardsScrollView!
     private let dictionaryBrain: DictionaryBrain
@@ -27,7 +23,17 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
     private let learnedCircleColor = "#A2DB68" //"#C9F0A1" //"#BAFFBC"
     private let failedCircleColor = "#FF7666" //"#FFA69B" //"#FFCABA"
     
-    var guessedWords: [Int : Bool] = [:]
+    var managedObjectContext: NSManagedObjectContext!
+    lazy var fetchedResultsController: NSFetchedResultsController = {
+        let fetchRequest = NSFetchRequest(entityName: "Word")
+        let sortDescriptor = NSSortDescriptor(key: "addedAt", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
+        fetchedResultsController.delegate = self
+        return fetchedResultsController
+    }()
+    
+    private var guessedWords: [Int : Bool] = [:]
     var savedWords: [Int] = []
     
     func updateButtonColors() {
@@ -35,6 +41,9 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
             let id = button.tag
             if guessedWords[id] != nil {
                 button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+                button.colorHex = getColorForButtonId(id)
+            } else {
+                button.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
                 button.colorHex = getColorForButtonId(id)
             }
         }
@@ -51,9 +60,28 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
         totalWordsCount = dictionaryBrain.wordCount()
         super.init(coder: aDecoder)
     }
+    private func updateGuessedWords() {
+        guard let objects = fetchedResultsController.fetchedObjects else { return }
+        for object in objects {
+            let id = object.valueForKey("wordId") as! Int
+            let guessed = object.valueForKey("guessed") as! Bool
+            guessedWords[id] = guessed
+        }
+        updateButtonColors()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        managedObjectContext = appDelegate.managedObjectContext
+        do {
+            try self.fetchedResultsController.performFetch()
+            updateGuessedWords()
+        } catch {
+            let fetchError = error as NSError
+            print("\(fetchError), \(fetchError.userInfo)")
+        }
         
         self.navigationController!.view.backgroundColor = UIColor.whiteColor()
         self.title = "Words"
@@ -75,6 +103,7 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         cardsScrollView.animateButtons()
+        updateButtonColors()
     }
     
     @IBAction func refresh() {
@@ -85,6 +114,7 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
         buttonsSetUp()
         cardsScrollView.buttons = buttons
         cardsScrollView.refresh()
+        updateButtonColors()
     }
     
     private func getColorForButtonId(id: Int) -> String {
@@ -108,14 +138,14 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
             buttonId = globalButtonId % (totalWordsCount - 1) + 1 // show different words on refresh
             
             //data from the dictionary
-            let word = dictionaryBrain.getWordWithNumber(buttonId)
+            let wordTitle = dictionaryBrain.getWordWithNumber(buttonId)
 
             let frame = getFrameFromCenter(center, radius: circleRadius)
             
             let button = BubbleButtonView(frame: frame)
             button.colorHex = getColorForButtonId(buttonId)
 
-            button.setTitle(word, forState: .Normal)
+            button.setTitle(wordTitle, forState: .Normal)
             button.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
             button.titleLabel?.adjustsFontSizeToFitWidth = true
             button.tag = buttonId
@@ -193,7 +223,8 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
         {
             if let destinationVC = segue.destinationViewController as? DefinitionViewController {
                 destinationVC.buttonId = sender?.tag
-                destinationVC.delegate = self
+//                destinationVC.isPeeking = false
+//                destinationVC.delegate = self
             }
         }
     }
@@ -202,31 +233,45 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
         guard let definitionVC = storyboard?.instantiateViewControllerWithIdentifier("DefinitionViewController") as? DefinitionViewController else { return nil }
         
         let currentButtonView = previewingContext.sourceView
-        definitionVC.delegate = self
+//        definitionVC.delegate = self
         definitionVC.buttonId = currentButtonView.tag
         definitionVC.isPeeking = true
-        
-        
-        
-//        let gr = UIPanGestureRecognizer(target: definitionVC, action: #selector(DefinitionViewController.pan(_:)))
-//        gr.delegate = definitionVC
-//        definitionVC.view.addGestureRecognizer(gr)
         return definitionVC
     }
-//    override func showViewController(vc: UIViewController, sender: AnyObject?) {
-//        vc.view.backgroundColor = UIColor.orangeColor()
-//        super.showViewController(vc, sender: sender)
-//        vc.view.backgroundColor = UIColor.orangeColor()
-//    }
     func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
-//        viewControllerToCommit.view.backgroundColor = UIColor.orangeColor()
-//        previewingContext.sourceView.backgroundColor = UIColor.orangeColor()
-//        let gr = UIPanGestureRecognizer(target: viewControllerToCommit, action: #selector(DefinitionViewController.pan(_:)))
-//        gr.delegate = (viewControllerToCommit as! UIGestureRecognizerDelegate)
-//        viewControllerToCommit.view.addGestureRecognizer(gr)
         showViewController(viewControllerToCommit, sender: self)
         if let definitionVC = viewControllerToCommit as? DefinitionViewController {
             definitionVC.isPeeking = false
+        }
+    }
+    
+    // MARK: - Fetched Results Controller Delegate Methods
+    func controllerDidChangeContent(controller: NSFetchedResultsController) {
+        self.updateButtonColors()
+    }
+    
+    func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
+        print(guessedWords)
+        print(anObject)
+        switch (type) {
+        case .Insert:
+            guard let wordId = anObject.valueForKey("wordId") as? Int, guessed = anObject.valueForKey("guessed") as? Bool else { break }
+            guessedWords[wordId] = guessed
+            self.updateButtonColors()
+            break
+        case .Delete:
+            if let wordId = anObject.valueForKey("wordId") as? Int {
+                guessedWords.removeValueForKey(wordId)
+                self.updateButtonColors()
+            }
+            break
+        case .Update:
+            guard let wordId = anObject.valueForKey("wordId") as? Int, guessed = anObject.valueForKey("guessed") as? Bool else { break }
+            guessedWords[wordId] = guessed
+            self.updateButtonColors()
+            break
+        case .Move:
+            break
         }
     }
 }
