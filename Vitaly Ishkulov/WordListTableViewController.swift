@@ -27,7 +27,7 @@ class WordListTableViewController: UITableViewController, NSFetchedResultsContro
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController!.view.backgroundColor = UIColor.whiteColor()
-        self.title = "Word List"
+        self.title = "History"
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         managedObjectContext = appDelegate.managedObjectContext
         
@@ -45,6 +45,7 @@ class WordListTableViewController: UITableViewController, NSFetchedResultsContro
         self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         tableView.tableFooterView = UIView(frame:CGRectZero)
+        registerForPreviewingWithDelegate(self, sourceView: self.tableView)
     }
 
     // MARK: - Table view data source
@@ -59,6 +60,19 @@ class WordListTableViewController: UITableViewController, NSFetchedResultsContro
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let sections = fetchedResultsController.sections {
             let sectionInfo = sections[section]
+            
+            let emptyLabel = UILabel(frame: CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height))
+            emptyLabel.font = UIFont.systemFontOfSize(24, weight: UIFontWeightLight)
+            emptyLabel.textColor = UIColor.grayColor()
+            emptyLabel.textAlignment = .Center
+            emptyLabel.adjustsFontSizeToFitWidth = true
+            emptyLabel.text = "Mark words to see history"
+            self.tableView.backgroundView = emptyLabel
+            
+            if sectionInfo.numberOfObjects != 0 {
+                self.tableView.backgroundView = nil
+            }
+            
             return sectionInfo.numberOfObjects
         }
         return 0
@@ -67,7 +81,7 @@ class WordListTableViewController: UITableViewController, NSFetchedResultsContro
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
         configureCell(cell, atIndexPath: indexPath)
-        registerForPreviewingWithDelegate(self, sourceView: cell)
+//        registerForPreviewingWithDelegate(self, sourceView: cell)
         return cell
     }
  
@@ -78,10 +92,16 @@ class WordListTableViewController: UITableViewController, NSFetchedResultsContro
         // Update Cell
         guard let word = record.valueForKey("word") as? String,
             id = record.valueForKey("wordId") as? Int,
-            definition = record.valueForKey("definition") as? String
+            definition = record.valueForKey("definition") as? String,
+            guessed = record.valueForKey("guessed") as? Bool
             else { return }
         cell.textLabel?.text = word
         cell.detailTextLabel?.text = definition
+        if guessed {
+            cell.imageView?.image = UIImage(named: "guessed")
+        } else {
+            cell.imageView?.image = UIImage(named: "notGuessed")
+        }
         cell.tag = id
     }
     
@@ -109,10 +129,21 @@ class WordListTableViewController: UITableViewController, NSFetchedResultsContro
     
     func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
         guard let definitionVC = storyboard?.instantiateViewControllerWithIdentifier("DefinitionViewController") as? DefinitionViewController else { return nil }
-        let currentButtonView = previewingContext.sourceView
-        definitionVC.buttonId = currentButtonView.tag
-        definitionVC.isPeeking = true
-        return definitionVC
+//        let currentButtonView = previewingContext.sourceView
+//        definitionVC.buttonId = currentButtonView.tag
+//        definitionVC.isPeeking = true
+//        return definitionVC
+        if let indexPath = tableView.indexPathForRowAtPoint(location) {
+            //This will show the cell clearly and blur the rest of the screen for our peek.
+//            let currentButtonView = previewingContext.sourceView
+            previewingContext.sourceRect = tableView.rectForRowAtIndexPath(indexPath)
+            if let cell = tableView.cellForRowAtIndexPath(indexPath) {
+                definitionVC.buttonId = cell.tag
+                definitionVC.isPeeking = true
+                return definitionVC
+            }
+        }
+        return nil
     }
     
     func previewingContext(previewingContext: UIViewControllerPreviewing, commitViewController viewControllerToCommit: UIViewController) {
@@ -144,7 +175,7 @@ class WordListTableViewController: UITableViewController, NSFetchedResultsContro
             }
             break
         case .Update:
-            guard let indexPath = indexPath, let cell = tableView.cellForRowAtIndexPath(indexPath) else { break }
+            guard let indexPath = indexPath, cell = tableView.cellForRowAtIndexPath(indexPath) else { break }
             configureCell(cell, atIndexPath: indexPath)
             break
         case .Move:

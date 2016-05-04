@@ -86,7 +86,7 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
         self.navigationController!.view.backgroundColor = UIColor.whiteColor()
         self.title = "Words"
         
-        globalButtonId = Int(arc4random()) % totalWordsCount // start with different words on launch
+        globalButtonId = Int(arc4random_uniform(UInt32(totalWordsCount))) % totalWordsCount // start with different words on launch
         
         cardsScrollView.frame = self.view.frame
         cardsScrollView.contentOffset.x = cardsScrollView.contentSize.width / 2 - self.view.frame.size.width / 2
@@ -94,9 +94,6 @@ class CardsViewController: UIViewController, UIViewControllerPreviewingDelegate,
         
         buttonsSetUp()
         cardsScrollView.buttons = buttons
-        
-        let shortcut = UIApplicationShortcutItem(type: "com.iva-soft.Vitaly-Ishkulov.show-words", localizedTitle: "Show Words", localizedSubtitle: "Your previously guessed cards", icon: UIApplicationShortcutIcon(type: UIApplicationShortcutIconType.Message), userInfo: nil)
-        UIApplication.sharedApplication().shortcutItems = [shortcut]
     }
     
     func showDetailsView(sender: UIButton) {

@@ -14,16 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
-        if shortcutItem.type == "com.iva-soft.Vitaly-Ishkulov.show-words" {
-            let tabBarVC = self.window!.rootViewController as! UITabBarController
-            tabBarVC.selectedIndex = 1
-            completionHandler(true)
-        }
-        completionHandler(false)
-    }
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        (self.window?.rootViewController as! UITabBarController).selectedIndex = 1
         return true
     }
 

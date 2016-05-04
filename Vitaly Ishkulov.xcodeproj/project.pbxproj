@@ -12,12 +12,13 @@
 		AA641DE71CCE15B300304B86 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DE61CCE15B300304B86 /* CardsViewController.swift */; };
 		AA641DEC1CCE15B300304B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA641DEA1CCE15B300304B86 /* Main.storyboard */; };
 		AA641DEE1CCE15B300304B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA641DED1CCE15B300304B86 /* Assets.xcassets */; };
-		AA641DF11CCE15B300304B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA641DEF1CCE15B300304B86 /* LaunchScreen.storyboard */; };
 		AA641DFA1CCE5E1300304B86 /* CardsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DF91CCE5E1300304B86 /* CardsScrollView.swift */; };
 		AA641DFC1CCE6C9D00304B86 /* BubbleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641DFB1CCE6C9D00304B86 /* BubbleButtonView.swift */; };
 		AA641E061CCFD82F00304B86 /* DictionaryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641E051CCFD82F00304B86 /* DictionaryBrain.swift */; };
 		AA641E0C1CD1058C00304B86 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA641E0B1CD1058C00304B86 /* DefinitionViewController.swift */; };
 		AAB0FFCB1CD3734F00BDBCA7 /* SavedWords.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAB0FFC91CD3734F00BDBCA7 /* SavedWords.xcdatamodeld */; };
+		AAB0FFCF1CD41CE100BDBCA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAB0FFCE1CD41CE100BDBCA7 /* LaunchScreen.storyboard */; };
+		AAB0FFD11CD4215C00BDBCA7 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB0FFD01CD4215C00BDBCA7 /* AboutViewController.swift */; };
 		AABF9E751CD2064400D6E218 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = AABF9E741CD2064400D6E218 /* dictionary.json */; };
 /* End PBXBuildFile section */
 
@@ -28,13 +29,14 @@
 		AA641DE61CCE15B300304B86 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		AA641DEB1CCE15B300304B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA641DED1CCE15B300304B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AA641DF01CCE15B300304B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA641DF21CCE15B300304B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA641DF91CCE5E1300304B86 /* CardsScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsScrollView.swift; sourceTree = "<group>"; };
 		AA641DFB1CCE6C9D00304B86 /* BubbleButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleButtonView.swift; sourceTree = "<group>"; };
 		AA641E051CCFD82F00304B86 /* DictionaryBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryBrain.swift; sourceTree = "<group>"; };
 		AA641E0B1CD1058C00304B86 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		AAB0FFCA1CD3734F00BDBCA7 /* SavedWords.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SavedWords.xcdatamodel; sourceTree = "<group>"; };
+		AAB0FFCE1CD41CE100BDBCA7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAB0FFD01CD4215C00BDBCA7 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		AABF9E741CD2064400D6E218 /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dictionary.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				AA641DF91CCE5E1300304B86 /* CardsScrollView.swift */,
 				AA641DFB1CCE6C9D00304B86 /* BubbleButtonView.swift */,
 				AA641DEA1CCE15B300304B86 /* Main.storyboard */,
+				AAB0FFD01CD4215C00BDBCA7 /* AboutViewController.swift */,
 				AA641DED1CCE15B300304B86 /* Assets.xcassets */,
 				AA641DF81CCE5D0B00304B86 /* Supporting Files */,
 			);
@@ -87,7 +90,7 @@
 				AAB0FFC91CD3734F00BDBCA7 /* SavedWords.xcdatamodeld */,
 				AABF9E741CD2064400D6E218 /* dictionary.json */,
 				AA641DE41CCE15B300304B86 /* AppDelegate.swift */,
-				AA641DEF1CCE15B300304B86 /* LaunchScreen.storyboard */,
+				AAB0FFCE1CD41CE100BDBCA7 /* LaunchScreen.storyboard */,
 				AA641DF21CCE15B300304B86 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -152,8 +155,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA641DF11CCE15B300304B86 /* LaunchScreen.storyboard in Resources */,
 				AABF9E751CD2064400D6E218 /* dictionary.json in Resources */,
+				AAB0FFCF1CD41CE100BDBCA7 /* LaunchScreen.storyboard in Resources */,
 				AA641DEE1CCE15B300304B86 /* Assets.xcassets in Resources */,
 				AA641DEC1CCE15B300304B86 /* Main.storyboard in Resources */,
 			);
@@ -169,6 +172,7 @@
 				AA4559ED1CD2A61600BBF84F /* WordListTableViewController.swift in Sources */,
 				AAB0FFCB1CD3734F00BDBCA7 /* SavedWords.xcdatamodeld in Sources */,
 				AA641DE51CCE15B300304B86 /* AppDelegate.swift in Sources */,
+				AAB0FFD11CD4215C00BDBCA7 /* AboutViewController.swift in Sources */,
 				AA641E0C1CD1058C00304B86 /* DefinitionViewController.swift in Sources */,
 				AA641DE71CCE15B300304B86 /* CardsViewController.swift in Sources */,
 				AA641DFC1CCE6C9D00304B86 /* BubbleButtonView.swift in Sources */,
@@ -186,14 +190,6 @@
 				AA641DEB1CCE15B300304B86 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AA641DEF1CCE15B300304B86 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA641DF01CCE15B300304B86 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

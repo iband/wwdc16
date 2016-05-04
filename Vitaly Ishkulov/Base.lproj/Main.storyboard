@@ -127,7 +127,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrf-qk-Tcy">
                                 <rect key="frame" x="500" y="428" width="80" height="80"/>
-                                <state key="normal" image="Cross">
+                                <state key="normal" image="Cross2">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -157,13 +157,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TdW-cy-gdH" firstAttribute="top" secondItem="IW6-H9-0Sh" secondAttribute="bottom" constant="43" id="5py-FR-lPH"/>
-                            <constraint firstItem="TdW-cy-gdH" firstAttribute="top" secondItem="Lrf-qk-Tcy" secondAttribute="bottom" constant="43" id="7QY-N9-aof"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lrf-qk-Tcy" secondAttribute="trailing" id="BIB-bu-8fY"/>
                             <constraint firstItem="v30-jK-vaB" firstAttribute="leading" secondItem="ij7-ty-dZl" secondAttribute="leadingMargin" id="DKP-NN-TpO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="v30-jK-vaB" secondAttribute="trailing" constant="4" id="G5l-cf-rH0"/>
                             <constraint firstItem="JdP-hY-VsX" firstAttribute="trailing" secondItem="ij7-ty-dZl" secondAttribute="trailingMargin" id="GXe-F0-neD"/>
                             <constraint firstItem="v30-jK-vaB" firstAttribute="top" secondItem="BES-m3-d9y" secondAttribute="bottom" id="H95-gP-GUa"/>
                             <constraint firstItem="Ykd-WR-EIZ" firstAttribute="leading" secondItem="ij7-ty-dZl" secondAttribute="leadingMargin" id="K0c-XP-DOd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Lrf-qk-Tcy" secondAttribute="trailing" id="Ocs-bQ-Mwj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BES-m3-d9y" secondAttribute="trailing" id="P6s-NF-jur"/>
                             <constraint firstItem="Wdt-1B-fI5" firstAttribute="leading" secondItem="ij7-ty-dZl" secondAttribute="leadingMargin" id="QIo-5K-9yJ"/>
                             <constraint firstAttribute="leadingMargin" secondItem="IW6-H9-0Sh" secondAttribute="leading" id="S1M-2p-PKR"/>
@@ -171,6 +170,7 @@
                             <constraint firstItem="Wdt-1B-fI5" firstAttribute="trailing" secondItem="ij7-ty-dZl" secondAttribute="trailingMargin" id="fLr-xA-NcV"/>
                             <constraint firstItem="JdP-hY-VsX" firstAttribute="leading" secondItem="ij7-ty-dZl" secondAttribute="leadingMargin" id="g4I-ZS-a1m"/>
                             <constraint firstItem="v30-jK-vaB" firstAttribute="top" secondItem="Ykd-WR-EIZ" secondAttribute="bottom" id="jEH-MQ-e5X"/>
+                            <constraint firstItem="TdW-cy-gdH" firstAttribute="top" secondItem="Lrf-qk-Tcy" secondAttribute="bottom" constant="43" id="ue0-2m-iD4"/>
                             <constraint firstItem="Ykd-WR-EIZ" firstAttribute="top" secondItem="KOp-If-a1z" secondAttribute="bottom" constant="20" id="wV7-KO-Ldy"/>
                             <constraint firstItem="BES-m3-d9y" firstAttribute="leading" secondItem="Ykd-WR-EIZ" secondAttribute="trailing" constant="8" id="xTE-6I-K1G"/>
                             <constraint firstItem="JdP-hY-VsX" firstAttribute="top" secondItem="Wdt-1B-fI5" secondAttribute="bottom" constant="20" id="zEi-hj-Rlv"/>
@@ -211,14 +211,14 @@
                                             <rect key="frame" x="15" y="16" width="46" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DJ4-be-Qpn">
                                             <rect key="frame" x="15" y="46" width="39.5" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -250,19 +250,20 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="2aK-2Y-TpF" kind="relationship" relationship="viewControllers" id="Aw4-Ym-Bfk"/>
                         <segue destination="A2Z-8h-Ryy" kind="relationship" relationship="viewControllers" id="kHS-2D-z6Z"/>
+                        <segue destination="2aK-2Y-TpF" kind="relationship" relationship="viewControllers" id="Aw4-Ym-Bfk"/>
+                        <segue destination="rv8-MW-l2g" kind="relationship" relationship="viewControllers" id="KJf-Mm-9Yy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--First-->
+        <!--Words-->
         <scene sceneID="1qh-ib-dmq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2aK-2Y-TpF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Words" image="WordListSelected" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SJG-uv-Uar">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -281,7 +282,7 @@
         <scene sceneID="Icg-U7-43m">
             <objects>
                 <navigationController storyboardIdentifier="StoryboardIDWordListNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A2Z-8h-Ryy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" image="second" id="5AG-KR-IbC"/>
+                    <tabBarItem key="tabBarItem" title="History" image="historyTab" id="5AG-KR-IbC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mGZ-fo-801">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -296,12 +297,51 @@
             </objects>
             <point key="canvasLocation" x="750" y="366"/>
         </scene>
+        <!--About View Controller-->
+        <scene sceneID="dfX-ad-hS3">
+            <objects>
+                <viewController id="exn-z3-B9M" customClass="AboutViewController" customModule="Vitaly_Ishkulov" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A3U-G3-v0D"/>
+                        <viewControllerLayoutGuide type="bottom" id="dyF-Qn-eYT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gO5-xC-xD7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7UM-9E-Yld"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WxI-tZ-ulh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562" y="1089"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="0SV-At-LSX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rv8-MW-l2g" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="About" id="H0a-tL-9MP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XEQ-Gw-oug">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="exn-z3-B9M" kind="relationship" relationship="rootViewController" id="0jA-54-iNw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xoU-Vu-M4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="1089"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="About" width="25" height="25"/>
         <image name="Check" width="80" height="80"/>
-        <image name="Cross" width="80" height="80"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="Cross2" width="80" height="80"/>
+        <image name="WordListSelected" width="27" height="26"/>
+        <image name="historyTab" width="27" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="5Z3-gc-IMV"/>
